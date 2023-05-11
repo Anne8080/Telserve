@@ -1,0 +1,16 @@
+.socialgrp{
+    margin: 0 2%;
+    a{
+        color: blue;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    a:hover{
+        border-bottom: 2px dotted blue;
+    }
+
+    p{
+        font-size: 1.2rem;
+        margin-top: 5%;
+    }
+}

@@ -1,0 +1,114 @@
+@media only screen and ( max-width: 1100px ){
+    .subscribepg{
+        .subleft{
+            width: 35%;
+
+            h1{
+                top: -160%;
+                margin-left: 10%;
+            }
+        }
+        .subright{
+            width: 80%;
+            padding: 0 2%;
+            .rightinner{
+                width: 100%;
+                height: 80vh;
+            }
+        }
+    }
+}
+@media only screen and ( max-width: 600px ){
+    .subscribepg{
+        flex-direction: column;
+        .subleft{
+            width: 100%;
+            height: fit-content;
+            padding-left: 0;
+            padding-right: 2%;
+            #back{
+                position: static;
+                top: 4%;
+            }
+
+            h1{
+                top: 0%;
+                margin-left: 0%;
+                position: static;
+                padding: 3% 7%;
+                #subarrow{
+                    transform: rotate(90deg);
+                }
+            }
+            ul{
+                display: flex;
+                text-align: center;
+                li{
+                    margin: 3% 0;
+                    border-left: 1px solid #fff;
+                }
+            }
+        }
+        .subright{
+            width: 100%;
+            padding: 2% 2% 0;
+            .rightinner{
+                width: 100%;
+                height: 80vh;
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width: 450px ){
+    .subscribepg{
+        .subleft{
+            #back{
+                position: static;
+                top: 4%;
+            }
+
+            h1{
+                padding: 3%;
+                font-size: 2rem;
+                letter-spacing: 2px;
+                #subarrow{
+                    transform: rotate(90deg);
+                    margin-left: 5px;
+                }
+            }
+            ul{
+                flex-wrap: wrap;
+                li{
+                    margin: 3% 2%;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .subright{
+            width: 100%;
+            padding: 2% 2% 0;
+            .rightinner{
+                width: 100%;
+                height: 80vh;
+            }
+        }
+    }
+}
+@media only screen and ( max-width: 300px ){
+    .subscribepg{
+        .subright .rightinner {
+            form{
+                .df{
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    #subscribe{
+        .total{
+            flex-direction: column;
+        }
+    }
+}

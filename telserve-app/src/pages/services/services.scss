@@ -1,0 +1,144 @@
+.servicehead{
+    background-color: orange;
+    padding: 2% 10%;
+
+    .left{
+        width: 50%;
+        h1{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: 1rem;
+            margin: 2% 0 9%;
+        }
+
+        .bluebtn{
+            padding: 2% 8%;
+            outline: 7px solid rgba(0, 0, 255, 0.267);
+        }
+        .bluebtn:hover{
+            color: white;
+            border: 7px solid white;
+        }
+    }
+}
+
+.features{
+    background-color: orange;
+
+    .innerfeatures{
+        background-color: white;
+        border-top-right-radius: 40%;
+        border-top-left-radius: 40%;
+        border-top: 10px ridge black;
+        padding: 7% 20%;
+        text-align: center;
+
+        .title{
+            padding: 2% 25%;
+        }
+    }
+}
+
+.best{
+    padding: 5% 10%;
+    .left{
+        width: 60%;
+        h1{
+            font-size: 3rem;
+            margin-bottom: 1%;
+        }
+    }
+}
+
+.provide{
+    padding: 5% 10%;
+    background-color: white;
+
+    .right{
+        width: 50%;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 1%;
+        }
+
+        .providepara{
+            margin: 3% 0 10%;
+        }
+        p{
+            margin: 1% 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .providecheck{
+                font-size: 1rem;
+                color: orange;
+            }
+        }
+        .bluebtn{
+            padding: 2% 5%;
+        }
+    }
+}
+
+@media only screen and ( max-width: 600px ){
+    .best, .servicehead{
+        padding: 5%;
+        flex-direction: column-reverse;
+
+        .left{
+            width: 100%;
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+        .right{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .features{
+        
+        .innerfeatures{
+            background-color: white;
+            border-radius: 0;
+            border-top: 10px ridge black;
+            padding: 7%;
+    
+            .title{
+                padding: 2%;
+            }
+            .featcards{
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .provide{
+        padding: 5% ;
+        flex-direction: column;
+
+        .left{
+            img{
+                width: 100%;
+            }
+        }
+
+        .right{
+            width: 100%;
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width: 1000px ){
+    .best, .servicehead, .provide, .features .innerfeatures{
+        padding: 7% 3%;
+    }
+}

@@ -1,0 +1,137 @@
+#nav{
+    display: block;
+    transform: translateX(5%, 0);
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 70vw;
+    right: 0;
+    z-index: 50;
+
+    ul{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        padding: 20% 0;
+        li{
+            padding: 4%;
+            font-size: 1.5rem;
+        }
+    }
+
+    .sign{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+
+        button{
+            margin: 5% auto 20%;
+        }
+    }
+}
+
+.nav{
+    padding: 2% 5%;
+    background-color: white;
+    transition: 0.8s ease-in-out;
+
+    .menuvis{
+        display: none;
+        font-size: 2rem;
+        color: blue;
+
+        .menu{
+            cursor: pointer;
+        }
+        .menu.none{
+            display: none;
+        }
+    }
+
+    // .left{
+    //     margin-left: 2%;
+    // }
+
+    ul{
+        list-style: none;
+        width: 45%;
+        color: white;
+
+        li{
+            padding: 0 4%;
+            color: white;
+            transition: 0.6s ease-in-out;
+            .help{
+                position: relative;
+
+                #help{
+                    position: absolute;
+                    font-size: 1rem;
+                    color: blue;
+                    top: -5px;
+                    right: -20px;
+                }
+            }
+
+            :hover{
+                color: blue;
+                border-bottom: 2px dotted blue;
+                
+            }
+        }
+        
+    }
+
+    
+
+    // language change
+
+    .sign{
+        width: 18%;
+
+    }
+
+    .lang{
+        padding: 3% 6%;
+        margin-right: 5%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50px;
+
+        ul{
+            display: none;
+            list-style: none;
+            position: absolute;
+            bottom: -90%;
+            z-index: 600;
+            width: 100%;
+            background-color: orange;
+            border-radius: 50px;
+            padding: 6% 9%;
+            li{
+                color:rgb(63, 63, 63);
+                :hover{
+                    border: none;
+                    color: white;
+                }
+            } 
+        }
+        ul.show{
+            display: block;
+        }
+    }
+    .sub{
+        padding: 4% 8%;
+    }
+}
+.navbg{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100vw;
+    z-index: 50;
+    transition: 0.8s ease-in-out;
+}

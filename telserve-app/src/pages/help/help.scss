@@ -1,0 +1,51 @@
+.more{
+    text-align: center;
+    padding: 10% 5%;
+    background-image: linear-gradient(rgba(255, 166, 0, 0.637), rgba(255, 166, 0, 0.637)), url('../../pics/kisspng-desktop-wallpaper-computer-icons-question-mark-cli-question-marks-5ace4265dbc786.8889523015234668539002.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    color: white;
+
+    img{
+        position: absolute;
+        left: 0;
+        opacity: 0.2;
+        width: 250px;
+        top: 5%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h3{
+        margin: 2% 0 7%;
+    }
+    .bluebtn{
+        padding: 1% 4%;
+    }
+}
+
+@media only screen and ( max-width: 1100px ){
+    .more{
+        img{
+            width: 200px;
+        }
+    }
+}
+@media only screen and ( max-width: 900px ){
+    .more{
+        img{
+            width: 170px;
+        }
+    }
+}
+@media only screen and ( max-width: 450px ){
+    .more{
+        img{
+            display: none;
+        }
+    }
+}

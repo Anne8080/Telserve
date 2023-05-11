@@ -1,0 +1,36 @@
+@media only screen and ( max-width: 450px ) {
+    .footer{
+        .foot{
+            flex-wrap: wrap;
+            text-align: left;
+
+            .linkdivs .innerlinkdivs{
+                margin: 0;
+
+            }
+            
+            .img{
+                margin-bottom: 5%;
+                width: 100%;
+            }
+    
+            ul{
+                li{
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width: 300px ){
+    .footer .foot{
+        flex-direction: column;
+        align-content: flex-start;
+    }
+}
+@media only screen and ( max-width: 600px ){
+    .footer{
+        padding: 5% 1% 3%;
+    }
+}

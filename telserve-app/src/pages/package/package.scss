@@ -1,0 +1,88 @@
+.packhead{
+    background-color: orange;
+    padding: 5%;
+    .left{
+        padding-left: 10%;
+        img{
+            width: 100%;
+        }
+    }
+    .right{
+        width: 40%;
+        h1{
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 10%;
+        }
+        .msg{
+            padding: 2% 8%;
+            outline: 7px solid rgba(0, 0, 255, 0.267);
+        }
+        .msg:hover{
+            color: white;
+            border: 7px solid white;
+        }
+    }
+}
+
+.what{
+    padding: 5%;
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 2%;
+    }
+}
+
+.adv{
+    padding: 3% 5%;
+    background-color: white;
+    margin-bottom: .5%;
+    .heading{
+        margin-left: 3%;
+
+        h1{
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            span{
+                color: orange;
+            }
+        }
+        .line{
+            margin: 2% 0;
+        }
+   }
+   .packages{
+    margin: 3% 0;
+   }
+}
+
+@media only screen and ( max-width: 600px ){
+    .packhead{
+        flex-direction: column;
+        .left{
+            padding-left: 0;
+        }
+
+        .right{
+            width: 100%;
+            padding: 10% 0;
+        }
+        
+    }
+    .what .packages, .adv .packages{
+        flex-direction: column;
+    }
+    .adv{
+        .heading{
+            margin-left: 0;
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+
+}
