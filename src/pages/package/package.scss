@@ -1,5 +1,5 @@
 .packhead{
-    background-color: orange;
+    background-color: var(--bs-primary);
     padding: 5%;
     .left{
         padding-left: 10%;
@@ -47,7 +47,7 @@
             font-weight: 600;
             margin-bottom: 0;
             span{
-                color: orange;
+                color: var(--bs-primary);
             }
         }
         .line{

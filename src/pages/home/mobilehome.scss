@@ -1,7 +1,7 @@
 @media only screen and ( max-width: 450px ){
     .subsec{
         flex-direction: column-reverse;
-        background: linear-gradient(0deg,rgba(255, 166, 0, 0),rgba(255, 166, 0, 0),orange, orange);
+        background: linear-gradient(0deg,rgba(255, 166, 0, 0),rgba(255, 166, 0, 0),var(--bs-primary), oranvar(--bs-primary)ge);
 
         .left{
             width: 100%;

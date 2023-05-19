@@ -44,9 +44,9 @@ const Package = () => {
           <div className="line"></div>
         </div>
         <div className="packages df">
-          <Advan icon=<WorkspacePremiumOutlinedIcon style={{fontSize: '3rem', color: 'orange' }}/> ad='30-Day Guarantee' word='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, vitae.' />
-          <Advan icon=<LiveHelpOutlinedIcon style={{fontSize: '3rem', color: 'orange' }}/> ad='24/7 Live Assistance' word='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, vitae.' />
-          <Advan icon=<LanOutlinedIcon style={{fontSize: '3rem', color: 'orange' }}/> ad='Easy Deployment' word='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, vitae.' />
+          <Advan icon=<WorkspacePremiumOutlinedIcon style={{fontSize: '3rem', color: 'var(--bs-primary)' }}/> ad='30-Day Guarantee' word='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, vitae.' />
+          <Advan icon=<LiveHelpOutlinedIcon style={{fontSize: '3rem', color: 'var(--bs-primary)' }}/> ad='24/7 Live Assistance' word='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, vitae.' />
+          <Advan icon=<LanOutlinedIcon style={{fontSize: '3rem', color: 'var(--bs-primary)' }}/> ad='Easy Deployment' word='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, vitae.' />
         </div>
       </section>
       <Footer/>

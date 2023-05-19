@@ -1,7 +1,7 @@
 .payplan{
 
     .top{
-        border: 1px solid orange;
+        border: 1px solidvar(--bs-primary);
         padding: 3%;
 
         .amount{
@@ -26,7 +26,7 @@
         .cicon{
             height: 20px;
             width: 20px;
-            outline: 1px solid orange;
+            outline: 1px solidvar(--bs-primary);
             border-radius: 50%;
             margin-right: 10px;
         }
@@ -55,7 +55,7 @@
 
     .drop{
         padding: 2% 4%;
-        border: 1px solid orange;
+        border: 1px solidvar(--bs-primary);
         display: none;
         p{
             display: flex;
@@ -63,7 +63,7 @@
             font-size: 1.2rem;
             margin: 2% 0;
             .dicon{
-                color: orange;
+                color:var(--bs-primary);
                 font-size: 1.2rem;
                 margin-right: 3px;
             }
@@ -78,7 +78,7 @@
     }
     .pdrop{
         padding: 2% 1%;
-        border: 1px solid orange;
+        border: 1px solidvar(--bs-primary);
         display: none;
     }
 }
@@ -91,7 +91,7 @@
 .cplan.selected{
     .name{
         .cicon{
-            border: 5px solid orange;
+            border: 5px solidvar(--bs-primary);
         }
     }
     .drop{
@@ -108,7 +108,7 @@
 .payment.selected{
     .name{
         .cicon{
-            border: 5px solid orange;
+            border: 5px solidvar(--bs-primary);
         }
     }
     .pdrop{

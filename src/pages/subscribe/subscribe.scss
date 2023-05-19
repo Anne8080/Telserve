@@ -26,7 +26,7 @@
             padding: 3% 27%;
             letter-spacing: 10px;
             background-color: white;
-            background: linear-gradient(90deg, orange, white);
+            background: linear-gradient(90deg, var(--bs-primary), white);
             font-weight: 700;
             font-size: 3rem;
             top: -50%;
@@ -92,7 +92,7 @@
                 textarea, input{
                     border: none;
                     padding: 5px;
-                    box-shadow: 1px 1px 0 2px orange;
+                    box-shadow: 1px 1px 0 2px var(--bs-primary);
                     resize: none;
                     margin: 1% 0;
                     font-size: 1rem;
@@ -156,6 +156,6 @@
 
 .line{
     width: 10%;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid var(--bs-primary);
     margin: 3% auto 0;
 }

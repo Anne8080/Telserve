@@ -1,5 +1,5 @@
 .servicehead{
-    background-color: orange;
+    background-color: var(--bs-primary);
     padding: 2% 10%;
 
     .left{
@@ -25,7 +25,7 @@
 }
 
 .features{
-    background-color: orange;
+    background-color: var(--bs-primary);
 
     .innerfeatures{
         background-color: white;
@@ -75,7 +75,7 @@
 
             .providecheck{
                 font-size: 1rem;
-                color: orange;
+                color: var(--bs-primary);
             }
         }
         .bluebtn{

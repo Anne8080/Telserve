@@ -1,3 +1,6 @@
+#logo{
+    width: 120px !important;
+}
 #nav{
     display: block;
     transform: translateX(5%, 0);
@@ -7,6 +10,10 @@
     width: 70vw;
     right: 0;
     z-index: 50;
+
+    .navlink{
+        text-decoration: none !important;
+    }
 
     ul{
         text-align: center;
@@ -109,7 +116,7 @@
             bottom: -90%;
             z-index: 600;
             width: 100%;
-            background-color: orange;
+            background-color:var(--bs-primary);
             border-radius: 50px;
             padding: 6% 9%;
             li{

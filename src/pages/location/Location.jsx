@@ -78,10 +78,10 @@ const Location = () => {
                     <h1>Check Out Our Pages</h1>
                     <div className="line"></div>
                     <div className="df sicons">
-                        <Socials icon=<FontAwesomeIcon icon={faFacebook} style={{color: 'orange', fontSize: '3rem'}} /> app='Facebook' />
-                        <Socials icon=<FontAwesomeIcon icon={faTwitterSquare} style={{color: 'orange', fontSize: '3rem'}} /> app='Twitter' />
-                        <Socials icon=<FontAwesomeIcon icon={faLinkedin } style={{color: 'orange', fontSize: '3rem'}} /> app='LinkedIn'  />
-                        <Socials icon=<FontAwesomeIcon icon={faGithub} style={{color: 'orange', fontSize: '3rem'}} /> app='Github' hlink='https://github.com/Anne8080/Telserve' />
+                        <Socials icon=<FontAwesomeIcon icon={faFacebook} style={{color: 'var(--bs-primary)', fontSize: '3rem'}} /> app='Facebook' />
+                        <Socials icon=<FontAwesomeIcon icon={faTwitterSquare} style={{color: 'var(--bs-primary)', fontSize: '3rem'}} /> app='Twitter' />
+                        <Socials icon=<FontAwesomeIcon icon={faLinkedin } style={{color: 'var(--bs-primary)', fontSize: '3rem'}} /> app='LinkedIn'  />
+                        <Socials icon=<FontAwesomeIcon icon={faGithub} style={{color: 'var(--bs-primary)', fontSize: '3rem'}} /> app='Github' hlink='https://github.com/Anne8080/Telserve' />
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import './nav.scss'
 import './mobilenav.scss'
 import eng from '../../pics/eng.png'
 import frn from '../../pics/french.png'
-import LogonoBg from '../../pics/netrix-logo.png'
+import LogonoBg from '../../assets/telserve_logo.png'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseIcon from '@mui/icons-material/Close';
 import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
