@@ -38,7 +38,7 @@ const Carousel = ({ slides }) => {
           {/* style={{backgroundImage: `url(${slides[currentIndex].url})`}} */}
         <div className="float df" id={slides[currentIndex].color} >
             <div className="leftcaroul">
-              <motion.h1 initial={{y: -50, x: -200}} animate={{ y: '0', x: 0 }} transition={{duration: 2, type: 'spring'}} key={currentIndex} className="title">{slides[currentIndex].title}</motion.h1>
+              <motion.h1 initial={{y: -50, x: -200}} animate={{ y: '0', x: 0 }} transition={{duration: 2, type: 'spring'}} key={currentIndex} className="title"><span style={{ color:slides[currentIndex].text || "black"}}>{slides[currentIndex].title}</span></motion.h1>
               <Link to='/subscribe' className="bluebtn msg">{slides[currentIndex].message}</Link>
             </div>
             <div className="rightcaroul">
@@ -52,7 +52,7 @@ const Carousel = ({ slides }) => {
                 </motion.div>  
               </Link>
               <motion.div initial={{y: 50}} animate={{ y: '0'}} transition={{duration: 1, type: 'tween'}} key={currentIndex} className="circlefloat">
-                <h3>Up to</h3>
+                <h5>Up to</h5>
                 <Circlebar perc={50} ratio={0.8} pcol='#0000ff' tcol='#d3d3d3'/>
               </motion.div>
             </div>

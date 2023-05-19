@@ -1,6 +1,16 @@
 #logo{
     width: 120px !important;
 }
+li.navlink{
+    a{
+        text-decoration: none !important;
+        color: black !important;
+        &:hover{
+            color: var(--bs-primary) !important;
+        }
+    }
+}
+
 #nav{
     display: block;
     transform: translateX(5%, 0);
@@ -11,10 +21,7 @@
     right: 0;
     z-index: 50;
 
-    .navlink{
-        text-decoration: none !important;
-    }
-
+    
     ul{
         text-align: center;
         margin: auto;
