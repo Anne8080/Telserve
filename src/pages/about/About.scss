@@ -1,0 +1,69 @@
+.about-us{
+    .bg-about{
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.829);
+    }
+    .gap{
+        padding: 3% 0%;
+        &-lg{
+            padding: 6% 0%;
+        }
+    }
+    .wwa{
+        padding: 9% 0%;
+    }
+    .hse{
+        padding: 9% 0%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.897);
+        li{
+            list-style-type: '➢';
+        }
+    }
+
+    .cgmr{
+        &{
+            background-color: rgb(51, 33, 33);
+            color: white;
+            padding: 40px;
+        }
+        img{
+            max-width: 50%;
+            position: absolute;
+            border-radius: 20px;
+            @media (max-width:900px) {
+                display: none;
+            }
+            &.right{
+                right: -30%;
+                top: 10%;
+            }
+            &.left{
+                left: -25%;
+                top: 10%;
+            }
+        }
+        
+        .content{
+            width: 80%;
+            @media (max-width:900px) {
+                width: 100%;
+            }
+            &-right{
+                width: 100%;
+                padding-left: 20%;
+                @media (max-width:900px) {
+                    padding-left: 0px;
+                }
+            }
+        }
+       
+    }
+    .team{
+        padding: 9% 0%;
+    }
+   
+}

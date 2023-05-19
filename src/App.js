@@ -11,9 +11,16 @@ import Subscribe from "./pages/subscribe/Subscribe";
 import Services from "./pages/services/Services";
 import Package from "./pages/package/Package";
 import Successful from "./pages/successful/Successful";
+import "./scss/main.scss"
+import "./scss/mods.scss"
+import "bootstrap/dist/js/bootstrap"
+import About from "./pages/about/About";
 
-
+import "aos/dist/aos.css"
+import aos from "aos"
 function App() {
+  
+  aos.init()
   return (
     <div className="App">
       <BrowserRouter>
@@ -38,6 +45,9 @@ function App() {
           </Route>
           <Route path="/successful">
             <Route index element={<Successful />}/>
+          </Route>
+          <Route path="/about">
+            <Route index element={<About />}/>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -11,6 +11,7 @@ import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import KeyboardArrowDOwnRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import {Link} from 'react-router-dom'
 import Langavatar from '../langavatar/Langavatar'
+import { Container } from '@mui/material'
 
 const Nav = () => {
   const [selected, setSelected] = useState(null)
@@ -39,7 +40,7 @@ const Nav = () => {
 	}
 	window.addEventListener ('scroll', changeColor)
   return (
-    <div className={color ? 'nav df navbg' : 'nav df'} id={nav === 1 ? 'nav'  : ''}>
+    <div className={color ? 'nav df navbg px-5' : 'nav df px-5'} id={nav === 1 ? 'nav'  : ''}>
         <div className="left df" >
             <img src={LogonoBg} alt="" id='logo'/>
             <div className="menuvis">
@@ -52,6 +53,7 @@ const Nav = () => {
             <li className='navlink'><Link to='/services'>Services</Link></li>
             <li className='navlink '><Link to='/help' className='help'>Help <LiveHelpOutlinedIcon id='help' /></Link></li>
             <li className='navlink'><Link to='/location'>Location</Link></li>
+            <li className='navlink'><Link to='/about'>About</Link></li>
         </ul>
         <div className={nav === 1 ? 'sign visible' : 'sign df notvisible'}>
             <button className="lang" onClick={() => toggle(1)}>

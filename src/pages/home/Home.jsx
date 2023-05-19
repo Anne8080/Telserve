@@ -11,6 +11,7 @@ import {motion} from 'framer-motion'
 import woman from '../../pics/woman.png'
 import {Link} from 'react-router-dom'
 import Faq from '../../components/faq/Faq.jsx'
+import ChooseUsNew from '../../components/choose/choose.jsx'
 
 const Home = () => {
     const slides = [
@@ -29,22 +30,7 @@ const Home = () => {
             <h1 className="choose">Choose Your Package</h1>
             <Tabs/>
         </section>
-        <section className='chooseus df' >
-            <div className="left">
-                <h1>Why You Should Choose Us</h1>
-                <Link to='/services' className="bluebtn lmore">Learn More</Link>
-            </div>
-            <div className="right">
-                <div className="df">
-                    <motion.div className='rightdf' initial={{y: -50, x: -100}} whileInView={{ y: '0', x: 0 }} transition={{duration: 0.7, type: 'spring'}} ><Chooseus icon='' title='Blazing Fast Speeds' write='Lorem ipsum dolor, sit amet consectetur adipisicing elit.' clas='chooseusdiv' /></motion.div>
-                    <motion.div className='rightdf' initial={{y: -50, x: 100}} whileInView={{ y: '0', x: 0 }} transition={{duration: 0.7, type: 'spring'}}><Chooseus icon='' title='Higher Speeds For Less' write='Lorem ipsum dolor, sit amet consectetur adipisicing elit.' clas='chooseusdiv'/></motion.div>
-                </div>
-                <div className="df">
-                    <motion.div className='rightdf' initial={{y: 50, x: -100}} whileInView={{ y: '0', x: 0 }} transition={{duration: 0.7, type: 'spring'}}><Chooseus icon='' title="Your Family's Favourite TV Channels" write='Lorem ipsum dolor, sit amet consectetur adipisicing elit.' clas='chooseusdiv'/></motion.div>
-                    <motion.div className='rightdf' initial={{y: 50, x: 100}} whileInView={{ y: '0', x: 0 }} transition={{duration: 0.7, type: 'spring'}}><Chooseus icon='' title='Built By Gamers For Gamers' write='Lorem ipsum dolor, sit amet consectetur adipisicing elit.' clas='chooseusdi'/></motion.div>
-                </div>
-            </div>
-        </section>
+        <ChooseUsNew />
         <section>
             <Faq/>
         </section>
