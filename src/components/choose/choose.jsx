@@ -21,8 +21,8 @@ function ChooseUsNew() {
                                     data-aos='fade-up' data-aos-duration='900ms'
                                     data-aos-delay='100'
                                     icon={<MdSpeed />}
-                                    title="Blazingly Fast"
-                                    content="Nisi laborum est adipisicing in occaecat qui ut ipsum mollit enim esse quis proident exercitation. Ut ullamco cillum proident laborum dolore. "
+                                    title="Blazingly Fast Internet"
+                                    content=" Say goodbye to buffering and endless loading times. Our state-of-the-art infrastructure ensures blazingly fast internet speeds, allowing you to enjoy smooth HD streaming, lag-free gaming, and lightning-quick downloads. "
                                 />
                             </Col>
                             <Col md={6}>
@@ -31,7 +31,7 @@ function ChooseUsNew() {
                                     data-aos-delay='300'
                                     icon={<MdSavings />}
                                     title="More With Less"
-                                    content="Nisi laborum est adipisicing in occaecat qui ut ipsum mollit enim esse quis proident exercitation. Ut ullamco cillum proident laborum dolore. Ullamco officia ullamco est non excepteur culpa aute laboris commodo commodo eu eiusmod. Pariatur dolore"
+                                    content="Our dedicated support team is always ready to assist you. Whether you have a question, need technical assistance, or require troubleshooting, we are here to provide prompt and reliable customer support, ensuring your satisfaction."
                                 />
                             </Col>
                             <Col md={6}>
@@ -40,7 +40,7 @@ function ChooseUsNew() {
                                     data-aos-delay='500'
                                     icon={<MdEnergySavingsLeaf />}
                                     title="Envinroment Friendly"
-                                    content="Nisi laborum est adipisicing in occaecat qui ut ipsum mollit enim esse quis proident exercitation. Ut ullamco cillum proident laborum dolore. Ullamco officia ullamco est non excepteur culpa aute laboris commodo commodo eu eiusmod. Pariatur dolore"
+                                    content="Choosing our Telserve Networks, not only will you benefit from our exceptional services, but you'll also contribute to a greener and more sustainable future because Our network and equipment are designed with energy efficiency in mind."
                                 />
                             </Col>
                             <Col md={6}>
@@ -49,7 +49,7 @@ function ChooseUsNew() {
                                     data-aos-delay='700'
                                     icon={<MdSupportAgent />}
                                     title="Amazing Customer Relation"
-                                    content="Nisi laborum est adipisicing in occaecat qui ut ipsum mollit enim esse quis proident exercitation. Ut ullamco cillum proident laborum dolore."
+                                    content="Our dedicated support team is always ready to assist you. Whether you have a question, need technical assistance, or require troubleshooting, we are here to provide prompt and reliable customer support, ensuring your satisfaction."
                                 />
                             </Col>
                         </Row>

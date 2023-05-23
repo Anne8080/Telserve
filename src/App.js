@@ -15,9 +15,12 @@ import "./scss/main.scss"
 import "./scss/mods.scss"
 import "bootstrap/dist/js/bootstrap"
 import About from "./pages/about/About";
+import ServicesNew from "./pages/Services_New/Services"
 
 import "aos/dist/aos.css"
 import aos from "aos"
+import Lagos from "./pages/places/lagos";
+import Abuja from "./pages/places/abuja";
 function App() {
   
   aos.init()
@@ -40,6 +43,9 @@ function App() {
           <Route path="/services">
             <Route index element={<Services />}/>
           </Route>
+          <Route path="/services-new">
+            <Route index element={<ServicesNew />}/>
+          </Route>
           <Route path="/package">
             <Route index element={<Package />}/>
           </Route>
@@ -48,6 +54,12 @@ function App() {
           </Route>
           <Route path="/about">
             <Route index element={<About />}/>
+          </Route>
+          <Route path="/lagos-plans">
+            <Route index element={<Lagos />}/>
+          </Route>
+          <Route path="/abuja-plans">
+            <Route index element={<Abuja />}/>
           </Route>
         </Routes>
       </BrowserRouter>

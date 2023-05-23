@@ -1,0 +1,18 @@
+.services{
+    .intro{
+        &-blob{
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            padding: 15% 10%;
+        }
+    }
+    
+    &-image{
+        max-width: 100%;
+    }
+    .bg-cover{
+        padding: 10% 0%;
+        background-color: rgba(0, 0, 0, 0.808);
+        background-blend-mode: darken;
+    }
+}

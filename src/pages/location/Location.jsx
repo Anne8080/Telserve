@@ -21,7 +21,7 @@ const Location = () => {
     <div style={{backgroundColor: '#EBEBEB'}} id='head'>
         <Nav/>
         <div className="light">
-            <h1>Let's Light Up Your<br /></h1><span>World</span>
+            <h1>Feel Free to Reachout to Us<br /></h1>
         </div>
         <div className="df locate">
             <aside>
@@ -34,12 +34,12 @@ const Location = () => {
                 </ul>
             </aside>
             <div className="right">
-                <div id="get">
+                <div id="get py-2">
                     <h1>Get In Touch</h1>
                     <div className="line"></div>
                     <p className='p'>Have a littile something, something you want to talk to us about? Well give us a ring, send us an email, or visit us with the details below.</p>
-                    <Link to='/subscribe' className="bluebtn getbtn">Or Subscribe</Link>
-                    <div className="df dfget">
+                    <Link to='/subscribe' className="btn btn-primary">Or Subscribe</Link>
+                    <div className="df dfget my-2">
                         <Credentials icon=<CallOutlinedIcon style={{fontSize: '3rem'}}/> title='Phone' det='0000 000 0000' hr='#chat' link='Chat'/>
                         <Credentials icon=<AlternateEmailOutlinedIcon style={{fontSize: '3rem'}}/> title='Email' det='info@gmail.com' hr='#message' link='Email'/>
                         <Credentials icon=<LocationOnOutlinedIcon style={{fontSize: '3rem'}}/> title='Address' det='Kado, Abuja' hr='#visit' link='Visit'/>
