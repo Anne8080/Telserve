@@ -1,0 +1,22 @@
+.testimony{
+    background-color: white;
+    padding: 5%;
+    margin: 2%;
+    border-radius: 10px;
+    text-align: center;
+    .profile{
+        border: 2px solid var(--bs-primary);
+        margin: auto;
+    }
+    p{
+        padding: 2%;
+    }
+}
+#o{
+    background-color: var(--bs-primary);
+    color:rgb(63, 63, 63);
+
+    .profile{
+        border: 2px solid white;
+    }
+}

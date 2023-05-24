@@ -1,0 +1,173 @@
+.light{
+    padding: 5%;
+    background-image: linear-gradient(rgba(134, 66, 2, 0.508), rgba(0, 0, 255, 0.507)), url('../../pics/world.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    h1{
+        font-size: 4rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 5%;
+        text-shadow: 3px 1px 0 #000;
+    }
+    span{
+        font-size: 5rem;
+        font-weight: 600;
+        text-shadow: 3px 1px 0 #111b86;
+        color: #fff;
+    }
+}
+
+.locate{
+    padding: 2%;
+
+    aside{
+        width: 20%;
+        padding-left: 2%;
+        border-right: 2px double var(--bs-primary);
+        height: 100vh;
+        padding-top: 10%;
+        background-color: white;
+
+        ul{
+            list-style: none;
+
+            li{
+                margin: 13% 0;
+                font-size: 1.5rem;
+                :hover{
+                    color: blue;
+                    border-bottom: 2px dotted blue;
+                }
+            }
+        }
+    }
+
+    .right{
+        height: 100vh;
+        overflow-y: scroll;
+        text-align: center;
+
+
+        h1{
+            font-size: 2.5rem;
+        }
+
+        .line{
+            width: 10%;
+            border-bottom: 3px solid var(--bs-primary);
+            margin: 3% auto 0;
+        }
+
+        .p{
+            font-size: 1.5rem;
+            padding: 3%;
+        }
+        
+        #get{
+            padding: 5%  20% 15%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            
+            
+
+            .getbtn{
+                padding: 1% 5%;
+            }
+            .dfget{
+                position: absolute;
+                bottom: -70px;
+                width: 90%;
+            }
+
+        }
+        #message{
+            background-color: white;
+            padding: 15% 25% 5%;
+
+            form{
+                padding: 4%;
+
+                h2{
+                    // font-weight: 300;
+                    font-size: 1rem;
+                    margin-top: 3%;
+                }
+
+                span{
+                    color: red;
+                }
+                // input, select
+                textarea, input{
+                    border: none;
+                    padding: 5px;
+                    box-shadow: 1px 1px 0 2px var(--bs-primary);
+                    resize: none;
+                    margin: 1% 0;
+                }
+                textarea, input:focus{
+                    outline: none;
+                }
+
+                .msgdiv{
+                    width: 100%;
+                    margin: 7% 0;
+
+                    textarea{
+                        width: 100%;
+                        height: 70px;
+                    }
+                }
+                .sendbtn{
+                    padding: 1% 5%;
+                }
+            }
+        }
+
+        #visit{
+            background-color: white;
+            padding: 5% 20%;
+
+            p{
+                padding: 5%;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            .map{
+                background-color: blue;
+                border-radius: 50px;
+                width: 100%;
+                color: white;
+                font-size: 3rem;
+                padding: 15% 0;
+            }
+        }
+
+        #socials{
+            padding: 5% 10%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+ 
+            .sicons{
+                position: static;
+                width: 90%;
+                flex-wrap: wrap;
+                padding: 5% 0;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .right::-webkit-scrollbar{
+        display: none;
+    }
+}
