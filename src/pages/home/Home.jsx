@@ -14,6 +14,7 @@ import ChooseUsNew from '../../components/choose/choose.jsx'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import Line from "../../components/Line.jsx"
 import Happy from './HappyConnection.jsx'
+import data from "../places/data.json"
 
 const Home = () => {
     const slides = [
@@ -27,10 +28,10 @@ const Home = () => {
         <div style={{ backgroundColor: '#EBEBEB', overflow: 'hidden' }} id='head'>
             <Nav />
             <Carousel slides={slides} />
-            <Company />
+            {/* <Company /> */}
             <section className="subtab">
                 <h1 className="choose">Choose Your Package</h1>
-                <Tabs />
+                <Tabs data={data}/>
             </section>
             <ChooseUsNew />
             <Happy />

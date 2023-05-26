@@ -52,15 +52,21 @@
         background:var(--bs-primary);
         color: #fff ;
         padding: 0.5%;
-        border-radius: 80px;
+        border-radius: 280px;
         font-size: 1.5rem;
         z-index: 1000;
         display: none;
         width: 40px;
         height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .totopd{
-        display: block;
+        display: flex;
+    }
+    .logo{
+        max-height: 70px;
     }
 }

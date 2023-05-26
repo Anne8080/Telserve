@@ -6,7 +6,7 @@ function ServiceCard({ serviceName = "", icon, description = "" }) {
     const [modalOpen, setModalOpen] = useState(false)
     return (
         <Card className='border-0 shadow services-card overflow-hidden h-100'>
-            <Modal show={modalOpen} onHide={() => setModalOpen(false)}>
+            <Modal show={modalOpen} onHide={() => setModalOpen(false)} size='xl'>
                 <ModalHeader><h1>{serviceName}</h1></ModalHeader>
                 <ModalBody>
                     <p className='lead'>{description}</p>

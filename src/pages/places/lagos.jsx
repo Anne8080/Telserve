@@ -20,7 +20,7 @@ function Lagos() {
                 <Row className='gy-3'>
                     {plans.lagos.map(p => <Col md={4} lg={3}>
                         <div className="shadow">
-                            <PlanCard name={"Demo"} price={4000} speed={26} features={["Fast", "Reliable"]} highlight />
+                            <PlanCard name={p.name} price={p.price} speed={p.speed} setUp={p.setup} features={p.features} highlight />
                         </div>
                     </Col>)}
                 </Row>

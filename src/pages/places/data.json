@@ -8,11 +8,44 @@
         6
     ],
     "lagos": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        {
+            "name": "Paddy Bundle",
+            "price": 14429,
+            "setup": 35900,
+            "speed": 17,
+            "features": [
+                "Unlimited Browsing",
+                "High Speed Internet",
+                "Straming"
+            ]
+        },
+        {
+            "name": "Home Lite",
+            "price": 14429,
+            "setup": 40000,
+            "speed": 25,
+            "features": [
+                "Unlimited Browsing",
+                "High Speed Internet",
+                "Straming",
+                "Lag-Free Videocalling",
+                "Virtual Meetings"
+            ]
+        },
+        {
+            "name": "Home Smart",
+            "price": 14429,
+            "setup": 40000,
+            "speed": 30,
+            "features": [
+                "Unlimited Browsing",
+                "High Speed Internet",
+                "Straming",
+                "Lag-Free Videocalling",
+                "Virtual Meetings",
+                "Near Zero Ping Gaming",
+                "Game Straming"
+            ]
+        }
     ]
 }
