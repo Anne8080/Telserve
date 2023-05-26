@@ -13,14 +13,15 @@ import Faq from '../../components/faq/Faq.jsx'
 import ChooseUsNew from '../../components/choose/choose.jsx'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import Line from "../../components/Line.jsx"
+import Happy from './HappyConnection.jsx'
 
 const Home = () => {
     const slides = [
         { title: "Internet service provision is our fortè", message: "Contact Us", color: "orange", text: "black" },
-        { title: "Measure Me App is Just my Goto Tool", message: "Learn More", color: "grey" },
-        { title: "Measure Me App is Just my Goto Tool", message: "Find", color: "pink" },
-        { title: "Measure Me App is Just my Goto Tool", message: "Visit", color: "blue" },
-        { title: "Measure Me App is Just my Goto Tool", message: "Join", color: "yellow" }
+        { title: "Get The Fastest Broadband Internet Service Available", message: "Learn More", color: "red", text:"white"},
+        // { title: "Measure Me App is Just my Goto Tool", message: "Find", color: "pink" },
+        // { title: "Measure Me App is Just my Goto Tool", message: "Visit", color: "blue" },
+        // { title: "Measure Me App is Just my Goto Tool", message: "Join", color: "yellow" }
     ];
     return (
         <div style={{ backgroundColor: '#EBEBEB', overflow: 'hidden' }} id='head'>
@@ -32,6 +33,7 @@ const Home = () => {
                 <Tabs />
             </section>
             <ChooseUsNew />
+            <Happy />
             <div className='subsec df'>
                 <Container>
                     <Row>

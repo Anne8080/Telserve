@@ -64,8 +64,8 @@ function Reason(props) {
     const { icon, title, content } = props;
     return <div className="bg-white p-3 rounded-3 h-100" {...props}>
         {{ ...icon, props: { size: 45, ...icon.props, color: "var(--bs-primary)" } }}
-        <h2 className='fw-bold py-3'>{title}</h2>
-        <p className="text-sm text-muted">{content}</p>
+        <h2 className='fw-bold py-3 text-start'>{title}</h2>
+        <p className="text-sm text-muted text-start">{content}</p>
     </div>
 }
 export default ChooseUsNew

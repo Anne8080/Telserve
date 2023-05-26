@@ -66,13 +66,13 @@ const Nav = () => {
         <li className='navlink'><Link to='/location'>Contact</Link></li>
       </ul>
       <div className={nav === 1 ? 'sign visible' : 'sign df notvisible'}>
-        <button className="lang" onClick={() => toggle(1)}>
+        {/* <button className="lang" onClick={() => toggle(1)}>
           <Langavatar lang='ENG' src={eng} /> <KeyboardArrowDOwnRoundedIcon />
 
           <ul className={selected === 1 ? 'show' : ''}>
             <li><Langavatar lang='FRN' src={frn} /></li>
           </ul>
-        </button>
+        </button> */}
       </div>
       <div className="menuvis">
         <MenuRoundedIcon className={nav === 1 ? 'menu none' : 'menu'} onClick={() => togglenav(1)} />

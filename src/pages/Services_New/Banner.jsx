@@ -12,7 +12,7 @@ function Banner() {
                     Get Started
                     <Line width={160} className='mx-auto' style={{marginTop:-5, marginBottom:20}}/>
                 </h1>
-                <p>Choose One Of The Suite of services that Telserve offers</p>
+                <p id="list">Choose One Of The Suite of services that Telserve offers</p>
             </Container>
         </div>
     )

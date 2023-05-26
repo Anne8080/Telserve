@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ServiceCard from './ServiceCard'
-import img from "../../assets/services/installation.jpg"
+import data from "./data"
 
 function ServiceList() {
     return (
@@ -12,51 +12,16 @@ function ServiceList() {
                 </h1>
                 <div className="pb-5 mb-5 pt-3">
                     <Row className='g-5 pb-5'>
-                        <Col data-aos='fade-up' data-aos-duration='800' md={6} lg={4}>
-                            <ServiceCard
-                                icon={<img src={img} className='services-image' />}
-                                description='In eu ea est pariatur culpa ex minim officia veniam 
-                                tempor excepteur deserunt. Adipisicing esse nisi proident aliquip
-                                 labore ea aute Lorem quis non minim ad.'
-                                   serviceName='Interet Installation'
-                            />
-                        </Col>
-                        <Col data-aos='fade-up' data-aos-duration='800' md={6} lg={4}>
-                            <ServiceCard
-                                icon={<img src={img} className='services-image' />}
-                                description='In eu ea est pariatur culpa ex minim officia veniam 
-                                tempor excepteur deserunt. Adipisicing esse nisi proident aliquip
-                                 labore ea aute Lorem quis non minim ad.'
-                                   serviceName='Interet Installation'
-                            />
-                        </Col>
-                        <Col data-aos='fade-up' data-aos-duration='800' md={6} lg={4}>
-                            <ServiceCard
-                                icon={<img src={img} className='services-image' />}
-                                description='In eu ea est pariatur culpa ex minim officia veniam 
-                                tempor excepteur deserunt. Adipisicing esse nisi proident aliquip
-                                 labore ea aute Lorem quis non minim ad.'
-                                   serviceName='Interet Installation'
-                            />
-                        </Col>
-                        <Col data-aos='fade-up' data-aos-duration='800' md={6} lg={4}>
-                            <ServiceCard
-                                icon={<img src={img} className='services-image' />}
-                                description='In eu ea est pariatur culpa ex minim officia veniam 
-                                tempor excepteur deserunt. Adipisicing esse nisi proident aliquip
-                                 labore ea aute Lorem quis non minim ad.'
-                                   serviceName='Interet Installation'
-                            />
-                        </Col>
-                        <Col data-aos='fade-up' data-aos-duration='800' md={6} lg={4}>
-                            <ServiceCard
-                                icon={<img src={img} className='services-image' />}
-                                description='In eu ea est pariatur culpa ex minim officia veniam 
-                                tempor excepteur deserunt. Adipisicing esse nisi proident aliquip
-                                 labore ea aute Lorem quis non minim ad.'
-                                   serviceName='Interet Installation'
-                            />
-                        </Col>
+                        {
+                            data.map(service => <Col data-aos='fade-up' data-aos-duration='800' md={6} lg={4} key={data.indexOf(service)}>
+                                <ServiceCard
+                                    icon={<img src={service.img} className='services-image' alt={service.name} />}
+                                    description={service.description}
+                                    serviceName={service.name}
+                                />
+                            </Col>)
+                        }
+
                     </Row>
                 </div>
             </Container>

@@ -5,6 +5,7 @@ import "./Services.scss"
 import ServiceList from './ServiceList'
 import Banner from './Banner'
 import Nav from '../../components/nav/Nav'
+import Footer from '../../components/footer/Footer'
 
 function Services() {
 
@@ -18,6 +19,7 @@ function Services() {
       <Intro />
       <Banner />
       <ServiceList />
+      <Footer />
     </div>
   )
 }
