@@ -61,7 +61,7 @@ const Nav = () => {
             </Dropdown.Menu>
           </Dropdown>
         </li>
-        <li className='navlink '><Link to='/help' className='help'>Help <LiveHelpOutlinedIcon id='help' /></Link></li>
+        {/* <li className='navlink '><Link to='/help' className='help'>Help <LiveHelpOutlinedIcon id='help' /></Link></li> */}
         <li className='navlink'><Link to='/about'>About</Link></li>
         <li className='navlink'><Link to='/location'>Contact</Link></li>
       </ul>
