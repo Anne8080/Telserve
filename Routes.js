@@ -1,9 +1,5 @@
-import React from "react";
-import{
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom"
+import React from 'react'
+import { Route } from 'react-router-dom'
 import Home from "./pages/home/Home";
 import Location from "./pages/location/Location";
 import Help from "./pages/help/Help";
@@ -11,24 +7,15 @@ import Subscribe from "./pages/subscribe/Subscribe";
 import Services from "./pages/services/Services";
 import Package from "./pages/package/Package";
 import Successful from "./pages/successful/Successful";
-import "./scss/main.scss"
-import "./scss/mods.scss"
-import "bootstrap"
 import About from "./pages/about/About";
 import ServicesNew from "./pages/Services_New/Services"
-
-import "aos/dist/aos.css"
-import aos from "aos"
 import Lagos from "./pages/places/lagos";
 import Abuja from "./pages/places/abuja";
-function App() {
-  
-  aos.init()
+
+function Routes() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/">
+    <div>
+        <Route path="/">
             <Route index element={<Home />}/>
           </Route>
           <Route path="/location">
@@ -61,10 +48,8 @@ function App() {
           <Route path="/abuja-plans">
             <Route index element={<Abuja />}/>
           </Route>
-        </Routes>
-      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default Routes
