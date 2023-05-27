@@ -37,7 +37,7 @@ function App() {
           <Route path="/help">
             <Route index element={<Help />}/>
           </Route>
-          <Route path="/subscribe">
+          <Route path="/subscribe/:id">
             <Route index element={<Subscribe />}/>
           </Route>
           <Route path="/services">

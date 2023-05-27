@@ -1,109 +1,86 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './subscribe.scss'
 import './mobilesubscribe.scss'
-import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
-import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
-import Accordition from '../../components/accordition/Accordition';
-import Selectplan from '../../components/selectplan/Selectplan';
-import {Link} from 'react-router-dom'
-import {motion} from 'framer-motion'
-
+import { useParams } from 'react-router-dom'
+import { Button, Card, Col, Container, FormControl, FormFloating, Row, Stack, } from 'react-bootstrap';
+import Nav from '../../components/nav/Nav'
+import data from "../places/data.json"
+import axios from 'axios';
+const fom = new Intl.NumberFormat("en-US")
+const format = (n) => "₦" + fom.format(n);
 const Subscribe = () => {
-  const [total, setTotal] = useState('0')
-
-    const totalfunc = (i) =>{
-    //   if (selected === i){
-    //     return setSelected(null)
-    //   }
-      setTotal(i)
-    }
+  const { id } = useParams()
+  let plan = {}
+  //first find in lagos before abuja
+  plan = data.lagos.find(p => p.id === id) || data.abuja.find(p => p.id === id);
+  const [form, setForm] = useState({ name: "", email: "", plan: plan.name, address: "", phone: "", })
+  const [sending, setSending] = useState(false)
   return (
-    <div className='subscribepg df'>
-        <div className="subleft">
-          <Link to="/"><KeyboardArrowLeftRoundedIcon id='back'/></Link>
-          <div className="content">
-            
-            <motion.h1 initial={{ x: -200}} animate={{ x: 0 }} transition={{duration: 1.2, type: 'spring'}} >Subscribe <EastOutlinedIcon id="subarrow" /></motion.h1>
-            <ul>
-                <motion.li initial={{ x: -200}} animate={{ x: 0 }} transition={{delay: 0.2,duration: 1.2, type: 'spring'}}><a href="#credentials">Fill in your Details</a></motion.li>
-                <motion.li initial={{ x: -200}} animate={{ x: 0 }} transition={{delay: 0.4,duration: 1.2, type: 'spring'}}><a href="#plan">Select a Plan</a></motion.li>
-                <motion.li initial={{ x: -200}} animate={{ x: 0 }} transition={{delay: 0.6,duration: 1.2, type: 'spring'}}><a href="#method">Payment Method</a></motion.li>
-                <motion.li initial={{ x: -200}} animate={{ x: 0 }} transition={{delay: 0.8,duration: 1.2, type: 'spring'}}><a href="#subscribe">Subscribe</a></motion.li>
-            </ul>
-          </div>
-        </div>
-        <div className="subright">
-          <div className="rightinner">
-            <div id="credentials">
-              <div className="title">
-                <h1>Fill in your Details</h1>
-                <div className="line"></div>
-              </div>
-              <form action="get">
-                  <div className="df">
-                      <div className="namediv">
-                          <div className="left">
-                            <h2>First Name <span>*</span></h2>
-                            <input type='text' className="num" placeholder='Eren' required />
-                          </div>
-                          <div className="left">
-                            <h2>Last Name <span>*</span></h2>
-                            <input type="text" className="period" placeholder='Jeager' required />
-                          </div>
-                      </div>
-                      <div className="maildiv">
-                          <div className="left">
-                            <h2>Email <span>*</span></h2>
-                            <input type='email' className="csv" placeholder='info@gmail.com' required />
-                          </div>
-                          
-                          <div className="left">
-                            <h2>Phone Number <span>*</span></h2>
-                            <input type='tel' className="phone" placeholder='+234 000 000 0000' required />
-                          </div>
-                      </div>
-                  </div>
-                  <div className="msgdiv">
-                      <h2>Address</h2>
-                      <textarea className="address" rows='2' aria-label="With textarea"></textarea>
-                  </div>
-              </form>
-            </div>
-            <div id='plan' className='parts'>
-              <div className="title">
-                <h1>Select a Plan</h1>
-                <div className="line"></div>
-              </div>
-              <Selectplan totalselct={totalfunc} />
-            </div>
-            
-            <div id='method' className='parts' >
-              <div className="title">
-                  <h1>Select a Payment Method</h1>
-                  <div className="line"></div>
-              </div>
-              <Accordition name='pay' />
-              
-            </div>
+    <div className='subscribe'>
+      <Nav />
+      <Container>
+        <h1>Subscription For {plan.name}</h1>
+        <br />
+        <Row className='g-2'>
+          <Col md={7}>
+            <Card className='text-start shadow border-0'>
+              <Card.Body>
+                <h3>{plan.name}</h3>
+                <div className="text-sm text-muted pb-3">Plan Name</div>
+                <h3>{format(plan.price)}</h3>
+                <div className="text-sm text-muted pb-3">Monthly Cost </div>
+                <h3>{format(plan.setup)}</h3>
+                <div className="text-sm text-muted pb-3">Setup Costs</div>
+              </Card.Body>
+            </Card>
+            <Card className='text-start shadow border-0 mt-4'>
+              <Card.Body>
+                <h3>{format(plan.price + plan.setup + (0.075 * (plan.price + plan.setup)))}</h3>
+                <div className="text-sm text-muted pb-3">Total Payment for Installation (VAT Inclusive)</div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={5}>
+            <form onSubmit={e=>{
+              e.preventDefault()
+              setSending(true)
+              axios.post("https://preview.telservenet.com/send-mail.php",form,{withCredentials:true}).then((d)=>{
+                if(d.data.sent){
+                  alert("Request Sent Successfully You will be contacted soon a member of our sales department")
+                }else{
+                  alert("Sorry Unable to send request, please try again alter or contact us, Thank you")
+                }
+              }).catch(err=>{
+                alert("Unable to connect with servers at this time try again later")
+                console.log(err);
+              }).finally(()=>{
+                setSending(false)
+              })
+            }}>
+              <Stack gap={2}>
+                <FormFloating>
+                  <FormControl placeholder='name' required value={form.name} onChange={e=>setForm({...form,name:e.target.value})}/>
+                  <label htmlFor="">Customer Name</label>
+                </FormFloating>
+                <FormFloating>
+                  <textarea placeholder='name' required className='form-control' style={{ height: 100 }} value={form.address} onChange={e=>setForm({...form,address:e.target.value})} />
+                  <label htmlFor="">Installation Address</label>
+                </FormFloating>
+                <FormFloating>
+                  <FormControl placeholder='name' type='email'value={form.email} onChange={e=>setForm({...form,email:e.target.value})}/>
+                  <label htmlFor="">Email</label>
+                </FormFloating>
+                <FormFloating>
+                  <FormControl placeholder='name' required value={form.phone} onChange={e=>setForm({...form,phone:e.target.value})}/>
+                  <label htmlFor="">Phone Number</label>
+                </FormFloating>
+                <Button type='submit' disabled={sending}>{sending ? "Please Wait....":"Enquire"}</Button>
+              </Stack>
+            </form>
+          </Col>
+        </Row>
 
-            <div id="subscribe">
-              <div className="title">
-                  <h1>Subcribe</h1>
-                  <div className="line"></div>
-              </div>
-              <div className="total df">
-                <div className="left">
-                  <h3>Total</h3>
-                  <p>Due on 9 May, 2023</p>
-                </div>
-                <div className="right">
-                  <h1><span>N</span>{total}</h1>
-                </div>
-              </div>
-              <a href="/successful" className="bluebtn">Subscribe</a>
-            </div>
-          </div>
-        </div>
+      </Container>
     </div>
   )
 }

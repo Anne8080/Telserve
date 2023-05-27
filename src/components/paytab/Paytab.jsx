@@ -6,7 +6,7 @@ import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 import Circlebar from '../circlebar/Circlebar';
 import { FaToolbox } from 'react-icons/fa';
 
-const Paytab = ({ plan, amount, writeup, check1, check2, check4, cl, perc, pcol, tcol, features = [] }) => {
+const Paytab = ({ plan, amount, writeup, check1, check2, check4, cl, perc, pcol, tcol, features = [],id }) => {
   return (
     <div className='paytab p-3 rounded-3' id={cl} >
       <div className="top">
@@ -24,7 +24,7 @@ const Paytab = ({ plan, amount, writeup, check1, check2, check4, cl, perc, pcol,
       </div>
       <div className="amount">
         <button><span id='naira'>₦</span> {amount} <span>/month</span></button><br />
-        <Link to='/subscribe' className="subpay">Subscribe Now</Link>
+        <Link to={'/subscribe/'+id} className="subpay">Subscribe Now</Link>
       </div>
     </div>
   )

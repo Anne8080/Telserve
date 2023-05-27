@@ -40,7 +40,7 @@ const Faq = () => {
         <div className="item">
           <div className={selected === i ? 'title df show' : 'title df'} onClick={() => toggle(i)}>
             <div className="iconfaq"><QuestionAnswerOutlinedIcon/></div>
-            <h2>{item.question}</h2>
+            <h4>{item.question}</h4>
             <span>{selected === i ? '-' : '+'}</span>
           </div>
           <div className={selected === i ? 'content show' : 'content'}>{item.answer}</div>

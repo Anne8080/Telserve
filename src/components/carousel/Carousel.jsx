@@ -39,7 +39,7 @@ const Carousel = ({ slides }) => {
         <div className="float df" id={slides[currentIndex].color} >
             <div className="leftcaroul">
               <motion.h1 initial={{y: -50, x: -200}} animate={{ y: '0', x: 0 }} transition={{duration: 2, type: 'spring'}} key={currentIndex} className="title fw-bold"><span style={{ color:slides[currentIndex].text || "black"}}>{slides[currentIndex].title}</span></motion.h1>
-              <Link to='/subscribe' className="bluebtn msg">{slides[currentIndex].message}</Link>
+              <Link to='/location' className="bluebtn msg">{slides[currentIndex].message}</Link>
             </div>
             <div className="rightcaroul">
               {/* <Link to='/help'>

@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    width: max-content;
+    width: fit-content;
     margin: auto;
     padding: 0% 50px;
   }
@@ -21,6 +21,7 @@
     cursor: pointer;
     outline: none;
     font-size: 15px;
+    width: fit-content;
   }
   .tabs:hover{
     background-color: rgba(0, 0, 255, 0.342);

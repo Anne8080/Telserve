@@ -65,8 +65,8 @@ const Tabs = ({ data }) => {
               perc={100}
             />
             </motion.div> */}
-            <Row className='w-100'>
-              {data.lagos.map(p => <Col md={4}>
+            <Row className='w-100 g-3'>
+              {data.lagos.map(p => <Col md={4} className='pb-2'>
                 <Paytab
                   plan={p.name}
                   amount={new Intl.NumberFormat("en-US").format(p.price)}
@@ -79,6 +79,7 @@ const Tabs = ({ data }) => {
                   pcol='#ffa500'
                   features={p.features}
                   perc={p.speed}
+                  id={p.id}
                 />
               </Col>)}
 

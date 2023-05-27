@@ -9,8 +9,9 @@
     ],
     "lagos": [
         {
+            "id": "1",
             "name": "Paddy Bundle",
-            "price": 14429,
+            "price": 14420,
             "setup": 35900,
             "speed": 17,
             "features": [
@@ -20,9 +21,10 @@
             ]
         },
         {
+            "id": "2",
             "name": "Home Lite",
-            "price": 14429,
-            "setup": 40000,
+            "price": 18999,
+            "setup": 45000,
             "speed": 25,
             "features": [
                 "Unlimited Browsing",
@@ -33,9 +35,10 @@
             ]
         },
         {
+            "id": "3",
             "name": "Home Smart",
-            "price": 14429,
-            "setup": 40000,
+            "price": 25200,
+            "setup": 45000,
             "speed": 30,
             "features": [
                 "Unlimited Browsing",
