@@ -17,10 +17,20 @@ function Lagos() {
                 </h1>
             </div>
             <Container className='py-5'>
-                <Row className='gy-3'>
+                <div className="text-center mb-2">Shared/Home Plans</div>
+                <Row className='gy-3 justify-content-center'>
                     {plans.lagos.map(p => <Col md={4} lg={3} key={p.id}>
-                        <div className="shadow">
+                        <div className="shadow h-100">
                             <PlanCard id={p.id} name={p.name} price={p.price} speed={p.speed} setUp={p.setup} features={p.features} highlight />
+                        </div>
+                    </Col>)}
+                </Row>
+
+                <div className="text-center mb-2 mt-5 pt-5 ">Dedicated/Enterprise Plans</div>
+                <Row className='gy-3 justify-content-center'>
+                    {plans.lagosEnt.map(p => <Col md={4} lg={3} key={p.id}>
+                        <div className="shadow">
+                            <PlanCard id={p.id} name={p.name} price={p.price} speed={p.speed} setUp={p.setup} features={["All Of Home Features","Dedicated Internet","Faster Speeds"]} highlight />
                         </div>
                     </Col>)}
                 </Row>

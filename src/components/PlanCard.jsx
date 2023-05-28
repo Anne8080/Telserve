@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const format = (n) => "₦" + new Intl.NumberFormat("en-US").format(n)
 function PlanCard({ speed, name, price, setUp, features = [], important, highlight = false,id }) {
     return (
-        <div className={`p-3 p-md-4 ${important ? "bg-primary shadow" : "bg-light2 nplan"} position-relative plan rounded-3`}
+        <div className={`p-3 p-md-4 ${important ? "bg-primary shadow" : "bg-light2 nplan"} position-relative plan rounded-3 h-100`}
             style={important && { transform: "scale(1.1)", zIndex: 33, borderTopLeftRadius: "22px !important" }}
         >
             <h3 className={` ${important ? "text-light" : "text-dark"} text-center fw-bold`}>{name}</h3>
@@ -28,10 +28,6 @@ function PlanCard({ speed, name, price, setUp, features = [], important, highlig
                     <div className={` ${important ? "text-light" : "text-primary"} fw-bold text-center`} style={{ fontSize: "1.4em" }}>{speed}<br />Mbps</div>
                 </CircularProgressbarWithChildren>
             </div>
-            <Stack className='text-center align-items-center' gap={2}>
-                <Badge bg={important ? "light text-primary mb-1" : "primary mb-1"}>{format(setUp)} <FaToolbox /> Setup Costs</Badge>
-                <Badge bg={important ? "light text-primary" : "primary"}>{format(price)} / mo</Badge>
-            </Stack>
             <ListGroup variant={`flush text p-2 pb-5 ${highlight && "bg-light-primary text-start white-text my-2 h-fit rounded-3"}`}>
                 {features.map(f => <ListGroupItem key={f} className={`bg-none  ${important ? "text-light" : "text-muted"}`}>
                     <FaCheckCircle color={!important ? 'var(--bs-primary)' : "white"} className='me-2' />{f}

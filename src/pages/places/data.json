@@ -50,5 +50,25 @@
                 "Game Straming"
             ]
         }
+    ],
+    "lagosEnt":[
+        {
+            "id":"11",
+            "name":"Gold (Dedicated)",
+            "price":32000,
+            "speed":45
+        },
+        {
+            "id":"12",
+            "name":"Silver (Dedicated)",
+            "price":42000,
+            "speed":75
+        },
+        {
+            "id":"13",
+            "name":"Platninuim (Dedicated)",
+            "price":150000,
+            "speed":100
+        }
     ]
 }

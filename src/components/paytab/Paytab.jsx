@@ -12,8 +12,6 @@ const Paytab = ({ plan, amount, writeup, check1, check2, check4, cl, perc, pcol,
       <div className="top">
         <h4 >{plan}</h4><br />
         <div style={{ height: '50%', width: '150px', margin: 'auto' }}><Circlebar perc={perc} ratio={0.6} pcol={pcol} tcol={tcol} /></div>
-        <p className='text-center px-3'> {writeup}<br /><FaToolbox /> Setup Costs</p>
-
       </div>
       <div className="linepay"></div>
       <div className="check">

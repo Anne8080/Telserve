@@ -11,7 +11,7 @@ const Subscribe = () => {
   const { id } = useParams()
   let plan = {}
   //first find in lagos before abuja
-  plan = data.lagos.find(p => p.id === id) || data.abuja.find(p => p.id === id);
+  plan = data.lagos.find(p => p.id === id) || data.abuja.find(p => p.id === id) || data.lagosEnt.find(p => p.id === id);
   const [form, setForm] = useState({ name: "", email: "", plan: plan.name, address: "", phone: "", })
   const [sending, setSending] = useState(false)
   const navigate = useNavigate()
@@ -21,7 +21,7 @@ const Subscribe = () => {
       <Container>
         <h1>Subscription For {plan.name}</h1>
         <br />
-        <Row className='g-2'>
+        <Row className='g-3'>
           <Col md={7}>
             <Card className='text-start shadow border-0'>
               <Card.Body>
@@ -29,57 +29,58 @@ const Subscribe = () => {
                 <div className="text-sm text-muted pb-3">Plan Name</div>
                 <h3>{format(plan.price)}</h3>
                 <div className="text-sm text-muted pb-3">Monthly Cost </div>
-                <h3>{format(plan.setup)}</h3>
+                <h3>{format(plan.setup || 0)}</h3>
                 <div className="text-sm text-muted pb-3">Setup Costs</div>
               </Card.Body>
             </Card>
             <Card className='text-start shadow border-0 mt-4'>
               <Card.Body>
-                <h3>{format(plan.price + plan.setup + (0.075 * (plan.price + plan.setup)))}</h3>
+                <h3>{format(plan.price + (plan.setup || 0) + (0.075 * (plan.price +( plan.setup || 0))))}</h3>
                 <div className="text-sm text-muted pb-3">Total Payment for Installation (VAT Inclusive)</div>
               </Card.Body>
             </Card>
           </Col>
           <Col md={5}>
-            <form onSubmit={e=>{
+            <form onSubmit={e => {
               e.preventDefault()
               setSending(true)
               const formData = new FormData();
-              Object.keys(form).forEach(k=>formData.append(k,form[k]))
-              axios.post("https://preview.telservenet.com/send-mail.php",formData).then((d)=>{
-                if(d.data.sent){
+              Object.keys(form).forEach(k => formData.append(k, form[k]))
+              axios.post("https://preview.telservenet.com/send-mail.php", formData).then((d) => {
+                if (d.data.sent) {
                   alert("Request Sent Successfully You will be contacted soon a member of our sales department")
                   navigate("/successful")
-                }else{
+                } else {
                   alert("Sorry Unable to send request, please try again alter or contact us, Thank you")
                 }
-              }).catch(err=>{
+              }).catch(err => {
                 alert("Unable to connect with servers at this time try again later")
                 console.log(err);
-              }).finally(()=>{
+              }).finally(() => {
                 setSending(false)
               })
 
               // axios.get("https://jsonplaceholder.typicode.com/posts/")
             }}>
+              <h4 className='text-start'>Send Request</h4>
               <Stack gap={2}>
                 <FormFloating>
-                  <FormControl placeholder='name' required value={form.name} onChange={e=>setForm({...form,name:e.target.value})}/>
+                  <FormControl placeholder='name' required value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
                   <label htmlFor="">Customer Name</label>
                 </FormFloating>
                 <FormFloating>
-                  <textarea placeholder='name' required className='form-control' style={{ height: 100 }} value={form.address} onChange={e=>setForm({...form,address:e.target.value})} />
+                  <textarea placeholder='name' required className='form-control' style={{ height: 100 }} value={form.address} onChange={e => setForm({ ...form, address: e.target.value })} />
                   <label htmlFor="">Installation Address</label>
                 </FormFloating>
                 <FormFloating>
-                  <FormControl placeholder='name' type='email'value={form.email} onChange={e=>setForm({...form,email:e.target.value})}/>
+                  <FormControl placeholder='name' type='email' value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
                   <label htmlFor="">Email</label>
                 </FormFloating>
                 <FormFloating>
-                  <FormControl placeholder='name' required value={form.phone} onChange={e=>setForm({...form,phone:e.target.value})}/>
+                  <FormControl placeholder='name' required value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
                   <label htmlFor="">Phone Number</label>
                 </FormFloating>
-                <Button type='submit' disabled={sending}>{sending ? "Please Wait....":"Enquire"}</Button>
+                <Button type='submit' disabled={sending}>{sending ? "Please Wait...." : "Enquire"}</Button>
               </Stack>
             </form>
           </Col>

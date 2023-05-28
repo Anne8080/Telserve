@@ -19,7 +19,7 @@ import data from "../places/data.json"
 const Home = () => {
     const slides = [
         { title: "Internet service provision is our fortè", message: "Contact Us", color: "orange", text: "black" },
-        { title: "Get The Fastest Broadband Internet Service Available", message: "Learn More", color: "red", text:"white"},
+        { title: "Get The Fastest Broadband Internet Service Available", message: "Learn More", color: "red", text: "white" },
         // { title: "Measure Me App is Just my Goto Tool", message: "Find", color: "pink" },
         // { title: "Measure Me App is Just my Goto Tool", message: "Visit", color: "blue" },
         // { title: "Measure Me App is Just my Goto Tool", message: "Join", color: "yellow" }
@@ -31,7 +31,10 @@ const Home = () => {
             {/* <Company /> */}
             <section className="subtab">
                 <h1 className="choose">Choose Your Package</h1>
-                <Tabs data={data}/>
+                <div className="text-center" style={{marginTop:-40, paddingBottom:20}}>
+                    <small className="text-muted">*These are Lagos Packages Only <Link to='/abuja-plans'>See Abuja</Link></small>
+                </div>
+                <Tabs data={data} />
             </section>
             <ChooseUsNew />
             <Happy />
