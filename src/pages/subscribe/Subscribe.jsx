@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './subscribe.scss'
-import './mobilesubscribe.scss'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { Button, Card, Col, Container, FormControl, FormFloating, Row, Stack, } from 'react-bootstrap';
 import Nav from '../../components/nav/Nav'
 import data from "../places/data.json"
@@ -15,6 +14,7 @@ const Subscribe = () => {
   plan = data.lagos.find(p => p.id === id) || data.abuja.find(p => p.id === id);
   const [form, setForm] = useState({ name: "", email: "", plan: plan.name, address: "", phone: "", })
   const [sending, setSending] = useState(false)
+  const navigate = useNavigate()
   return (
     <div className='subscribe'>
       <Nav />
@@ -44,9 +44,12 @@ const Subscribe = () => {
             <form onSubmit={e=>{
               e.preventDefault()
               setSending(true)
-              axios.post("https://preview.telservenet.com/send-mail.php",form,{withCredentials:true}).then((d)=>{
+              const formData = new FormData();
+              Object.keys(form).forEach(k=>formData.append(k,form[k]))
+              axios.post("https://preview.telservenet.com/send-mail.php",formData).then((d)=>{
                 if(d.data.sent){
                   alert("Request Sent Successfully You will be contacted soon a member of our sales department")
+                  navigate("/successful")
                 }else{
                   alert("Sorry Unable to send request, please try again alter or contact us, Thank you")
                 }
@@ -56,6 +59,8 @@ const Subscribe = () => {
               }).finally(()=>{
                 setSending(false)
               })
+
+              // axios.get("https://jsonplaceholder.typicode.com/posts/")
             }}>
               <Stack gap={2}>
                 <FormFloating>
