@@ -18,9 +18,9 @@ function Lagos() {
             </div>
             <Container className='py-5'>
                 <Row className='gy-3'>
-                    {plans.lagos.map(p => <Col md={4} lg={3}>
+                    {plans.lagos.map(p => <Col md={4} lg={3} key={p.id}>
                         <div className="shadow">
-                            <PlanCard name={p.name} price={p.price} speed={p.speed} setUp={p.setup} features={p.features} highlight />
+                            <PlanCard id={p.id} name={p.name} price={p.price} speed={p.speed} setUp={p.setup} features={p.features} highlight />
                         </div>
                     </Col>)}
                 </Row>
