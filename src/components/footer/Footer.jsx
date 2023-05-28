@@ -31,7 +31,7 @@ const Footer = () => {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/lagos-plans">Package</Link></li>
                             <li><Link to="/services-new">Service</Link></li>
-                            <li><Link to="/help">Help</Link></li>
+                            {/* <li><Link to="/help">Help</Link></li> */}
                             <li><Link to="/location">Contact Us</Link></li>
                         </ul>
                     </div>
@@ -41,9 +41,9 @@ const Footer = () => {
                     <div className="innerlinkdivs">
                         <h3>Legal</h3>
                         <ul>
-                            <li><Link to="/services">General Info</Link></li>
+                            <li><Link to="/services-new">Serviced</Link></li>
                             <li><Link to="/location">Contact Us</Link></li>
-                            <li><Link to="">Privacy Policy</Link></li>
+                            <li><Link to="/about">About Us</Link></li>
                             <li><Link to="">Terms and Conditions</Link></li>
                         </ul>
                     </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                         <h3>Talk to Us</h3>
                         <ul>
                             <li>info@telservenet.com</li>
-                            <li>+234 000 000 0000</li>
+                            <li>+234 01 295 3548</li>
                         </ul>
                     </div>
                 </div>
