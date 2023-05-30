@@ -14,6 +14,10 @@ function Services() {
     <div className='services'>
       <Helmet>
         <title>Telserve Networks &gt; Services</title>
+        <meta
+          name="description"
+          content="Test Meta"
+        />
       </Helmet>
       <Nav />
       <Intro />
