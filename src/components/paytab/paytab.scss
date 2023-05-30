@@ -3,6 +3,7 @@
     background-color: #f0f0f0 ;
     width: max-content;
     margin: auto;
+    margin-bottom: 10px;
     .top{
         width: max-content;
         text-align: center;
@@ -21,7 +22,8 @@
             color: rgb(0, 0, 0);
             margin: auto;
             border-radius: 48px;
-            font-size: 3rem;
+            font-size: 2rem;
+            font-weight: bold;
         }
 
         h2{

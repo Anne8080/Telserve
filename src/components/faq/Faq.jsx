@@ -7,19 +7,19 @@ import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlin
 const data = [
   {
     question: 'How to register on Telserve?',
-    answer: '1. Unplug the power and Ethernet cables from the modem. Some modems have backup batteries that need to be removed too. 2. Wait 2-3 minutes for the modem to fully power off. All the lights on the modem should be off. 3. Reconnect the power and Ethernet cables to the modem. 4. Wait for the Ethernet light to turn solid, then check if the internet is working properly.'
+    answer: 'Easy By Contacting us via mail on info@telservnet.com or calling any of our phone numbers, or you can access various plans by clicking on service plans to the Navigation bar and choose either Lagos or Abuja Plans to get started'
   },
   {
-    question: 'What is dedicated Internet?',
-    answer: '1. Unplug the power and Ethernet cables from the modem. Some modems have backup batteries that need to be removed too. 2. Wait 2-3 minutes for the modem to fully power off. All the lights on the modem should be off. 3. Reconnect the power and Ethernet cables to the modem. 4. Wait for the Ethernet light to turn solid, then check if the internet is working properly.'
+    question: 'Whats the difference between dedicated and shared internet?',
+    answer: ' the key difference between dedicated and shared internet lies in the level of exclusivity and control over the bandwidth. Dedicated Internet provides dedicated and guaranteed bandwidth to a single user or organization, offering consistent performance and high-speed access. On the other hand, shared internet divides the available bandwidth among multiple users, resulting in potential fluctuations in speed and performance depending on network congestion and the number of concurrent users.'
   },
   {
-    question: 'How to restart the modem?',
-    answer: '1. Unplug the power and Ethernet cables from the modem. Some modems have backup batteries that need to be removed too. 2. Wait 2-3 minutes for the modem to fully power off. All the lights on the modem should be off. 3. Reconnect the power and Ethernet cables to the modem. 4. Wait for the Ethernet light to turn solid, then check if the internet is working properly.'
+    question: 'Are there any data caps or limits on your internet plans?',
+    answer: 'We offer unlimited data on ALL of our internet plans. This means that you can use the internet without worrying about data caps or limits.'
   },
   {
-    question: 'How to pay for internet with myTelserve?',
-    answer: '1. Unplug the power and Ethernet cables from the modem. Some modems have backup batteries that need to be removed too. 2. Wait 2-3 minutes for the modem to fully power off. All the lights on the modem should be off. 3. Reconnect the power and Ethernet cables to the modem. 4. Wait for the Ethernet light to turn solid, then check if the internet is working properly.'
+    question: 'What additional features or services do you offer with your internet plans?',
+    answer: 'We Do offer a CRM(Customer Relational Management) Software as well as an entire PMS(Process management Software). and an automated billing System will be available soon.'
   }
 ]
 
@@ -40,7 +40,7 @@ const Faq = () => {
         <div className="item">
           <div className={selected === i ? 'title df show' : 'title df'} onClick={() => toggle(i)}>
             <div className="iconfaq"><QuestionAnswerOutlinedIcon/></div>
-            <h2>{item.question}</h2>
+            <h4>{item.question}</h4>
             <span>{selected === i ? '-' : '+'}</span>
           </div>
           <div className={selected === i ? 'content show' : 'content'}>{item.answer}</div>

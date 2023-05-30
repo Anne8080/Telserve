@@ -91,6 +91,10 @@
         background: none;
     }
 
+    &-light-primary{
+        background-color: lighten($primary, 1);
+    }
+
     &-grad {
         &.primary {
             background: linear-gradient(to bottom, $primary, $info);
@@ -106,6 +110,26 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    &-light2 {
+        background-color: white;
+
+        * {
+            color: black;
+        }
+    }
+}
+
+.white-text {
+    color: white !important;
+
+    * {
+        color: white !important;
+    }
+}
+
+.h-fit{
+    max-height: fit-content;
 }
 
 .roll {
@@ -150,7 +174,7 @@
     left: 0;
     top: 0;
     // background-color: red;
-    background-image: linear-gradient(to bottom,transparent, white);
+    background-image: linear-gradient(to bottom, transparent, white);
 }
 
 .team-card {
@@ -177,18 +201,19 @@
         width: 100%;
         height: 100%;
         overflow: auto;
-        padding-top:40px !important;
+        padding-top: 40px !important;
     }
 
-    .info{
+    .info {
         position: absolute;
         bottom: -20px;
-        h5{
+
+        h5 {
             margin-bottom: -1px;
         }
     }
 
-    .fade-container{
+    .fade-container {
         position: relative;
         bottom: 0px;
         height: 80px;
@@ -202,7 +227,9 @@
             background-color: rgba(0, 0, 0, 0.76);
             color: white;
         }
-        & .info, & .fade-bg{
+
+        & .info,
+        & .fade-bg {
             display: none;
         }
     }

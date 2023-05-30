@@ -1,0 +1,18 @@
+.places{
+    &{
+        min-height: 100vh;
+        background-color: rgb(233, 233, 255);
+    }
+    .banner{
+        width: 100vw;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.76);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

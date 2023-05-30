@@ -5,45 +5,70 @@ import './mobilehome.scss'
 import Carousel from '../../components/carousel/Carousel.jsx'
 import Company from '../../components/company/Company.jsx'
 import Tabs from '../../components/tabs/Tabs.jsx'
-import Chooseus from '../../components/chooseus/Chooseus.jsx'
 import Footer from '../../components/footer/Footer.jsx'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import woman from '../../pics/woman.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Faq from '../../components/faq/Faq.jsx'
 import ChooseUsNew from '../../components/choose/choose.jsx'
+import { Button, Col, Container, Row } from 'react-bootstrap'
+import Line from "../../components/Line.jsx"
+import Happy from './HappyConnection.jsx'
+import data from "../places/data.json"
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
     const slides = [
-        { title: "We're In The Business Of 'Get Quality Internet Service'", message: "Get Started", color: "orange", text:"black" },
-        { title: "Measure Me App is Just my Goto Tool", message: "Check it out", color: "grey"  },
-        { title: "Measure Me App is Just my Goto Tool", message: "Find", color: "pink"  },
-        { title: "Measure Me App is Just my Goto Tool", message: "Visit", color: "blue" },
-        { title: "Measure Me App is Just my Goto Tool", message: "Join", color: "yellow"  }
-      ];
-  return (
-    <div style={{backgroundColor: '#EBEBEB', overflow: 'hidden'}} id='head'>
-        <Nav/>
-        <Carousel slides={slides} />
-        <Company/>
-        <section className="subtab">
-            <h1 className="choose">Choose Your Package</h1>
-            <Tabs/>
-        </section>
-        <ChooseUsNew />
-        <section>
-            <Faq/>
-        </section>
-        <section className='subsec df'>
-            <motion.div initial={{y: 100, opacity: 0}} whileInView={{ y: '0', opacity:1 }} transition={{duration: 0.7, type: 'spring'}} className="left"><img src={woman} alt="" /></motion.div>
-            <div className="right">
-                <h1 className="subus text-white">Come Subscribe with Us</h1>
-                <Link to='/subscribe' className="bluebtn btn">Subscribe</Link>
+        { title: "Internet service provision is our fortè", message: "Contact Us", color: "orange", text: "black" },
+        { title: "Get The Fastest Broadband Internet Service Available", message: "Learn More", color: "red", text: "white" },
+        // { title: "Measure Me App is Just my Goto Tool", message: "Find", color: "pink" },
+        // { title: "Measure Me App is Just my Goto Tool", message: "Visit", color: "blue" },
+        // { title: "Measure Me App is Just my Goto Tool", message: "Join", color: "yellow" }
+    ];
+    return (
+        <div style={{ backgroundColor: '#EBEBEB', overflow: 'hidden' }} id='head'>
+            <Nav />
+            <Carousel slides={slides} />
+            <Helmet>
+                <title>Telseve Networks</title>
+            </Helmet>
+            {/* <Company /> */}
+            <section className="subtab">
+                <h1 className="choose">Choose Your Package</h1>
+                <div className="text-center" style={{marginTop:-40, paddingBottom:20}}>
+                    <small className="text-muted">*These are Lagos Packages Only <Link to='/abuja-plans'>See Abuja</Link></small>
+                </div>
+                <Tabs data={data} />
+            </section>
+            <ChooseUsNew />
+            <Happy />
+            <div className='subsec df'>
+                <Container>
+                    <Row>
+                        <Col md={5}>
+                            <img className='img-fluid' src={woman} data-aos='zoom-in-right' data-aos-duration='800' data-aos-delay='100' alt='Join Telservenetworks' />
+                        </Col>
+                        <Col md={7}>
+                            <div className="d-flex justify-content-center text-white h-100 flex-column" data-aos='zoom-out' data-aos-duration='800' data-aos-delay='100'>
+                                <Line color='var(--bs-info)' width={150} className='mx-auto' />
+                                <h1 className="fw-bold display-5">
+                                    Come Subscribe With Us
+                                </h1>
+                                <p className="text">
+                                    And Get First class quality internet service
+                                </p>
+                                <Button variant='info' data-aos='fade' data-aos-delay="600">Get Started</Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
-        </section>
-        <Footer/>
-    </div>
-  )
+            <section>
+                <Faq />
+            </section>
+            <Footer />
+        </div>
+    )
 }
 
 export default Home

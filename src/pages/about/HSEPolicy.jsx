@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import bg from "../../assets/widecollage.jpg"
-import { Button, Container } from 'react-bootstrap'
+import { Button, Container, Modal } from 'react-bootstrap'
 import Line from '../../components/Line'
 function HSEPolicy() {
+    const [modalOpen, setModalOpen] = useState(false)
     return (
         <div className='hse text-light' style={{
             backgroundImage: `url(${bg})`
@@ -47,7 +48,73 @@ function HSEPolicy() {
                         operate.
                     </li>
                 </ol>
-                <Button size='sm'>See Them all</Button>
+                <Modal show={modalOpen} onHide={()=>setModalOpen(false)} size='xl'>
+                    <Modal.Header>
+                        <h2>Health, Safety and Environment Policy</h2>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p className='lead'>
+                            <ol className=''>
+                                <li>
+                                    Take a proactive approach towards creating safe work environment
+                                    for all employees and will be accountable for promoting continued
+                                    safety education and training for all employees, assigning
+                                    responsibility for all aspects of program, continuously reviewing the
+                                    program to identify potential areas of improvement, and ensuring a
+                                    thorough evaluation of all incidents.
+                                </li>
+                                <li>
+                                    Address the environmental and health impact of our operations by
+                                    reducing waste, emissions, and discharges and by using energy
+                                    efficiently.
+                                </li>
+                                <li>
+                                    Demonstrate good citizenship in every community in which we
+                                    operate.
+                                </li>
+                                <li>
+                                    Maintain awareness of HSE matters so to be proactive in providing
+                                    value add services to our clients.
+                                </li>
+                                <li>
+                                    ➢ To emphasize our commitment to maintaining and ensuring the
+                                    Health and Safety of our employees and persons directly or indirectly
+                                    involved in Telserve networks will do everything at all times to;
+                                    <ol>
+                                        <li>
+                                            Ensure that all persons engaged in its activities are medically fit
+                                        </li>
+                                        <li>
+                                            Ensure that safety is taken into account from the design stage
+                                            of any project to its completion.
+                                        </li>
+                                        <li>
+                                            Undertake frequent inspection of work site, organize audit of
+                                            equipment and give the Findings and recommendations urgent
+                                            and adequate attention needed to create a safe Environment
+                                            for its personnel.
+                                        </li>
+                                        <li>
+                                            Engage in and support all programs that will improve the safety
+                                            awareness of its staff.
+                                        </li>
+                                        <li>
+                                            Protect and preserve the Environment to the best of its ability.
+                                        </li>
+                                    </ol>
+                                </li>
+
+
+                            </ol>
+                        </p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <div className="text-right">
+                            <Button onClick={()=>setModalOpen(false)}>Close</Button>
+                        </div>
+                    </Modal.Footer>
+                </Modal>
+                <Button size='sm' onClick={()=>setModalOpen(true)}>See Them all</Button>
             </Container>
         </div>
     )

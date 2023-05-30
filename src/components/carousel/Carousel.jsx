@@ -38,11 +38,11 @@ const Carousel = ({ slides }) => {
           {/* style={{backgroundImage: `url(${slides[currentIndex].url})`}} */}
         <div className="float df" id={slides[currentIndex].color} >
             <div className="leftcaroul">
-              <motion.h1 initial={{y: -50, x: -200}} animate={{ y: '0', x: 0 }} transition={{duration: 2, type: 'spring'}} key={currentIndex} className="title"><span style={{ color:slides[currentIndex].text || "black"}}>{slides[currentIndex].title}</span></motion.h1>
-              <Link to='/subscribe' className="bluebtn msg">{slides[currentIndex].message}</Link>
+              <motion.h1 initial={{y: -50, x: -200}} animate={{ y: '0', x: 0 }} transition={{duration: 2, type: 'spring'}} key={currentIndex} className="title fw-bold"><span style={{ color:slides[currentIndex].text || "black"}}>{slides[currentIndex].title}</span></motion.h1>
+              <Link to='/location' className="bluebtn msg">{slides[currentIndex].message}</Link>
             </div>
             <div className="rightcaroul">
-              <Link to='/help'>
+              {/* <Link to='/help'>
                 <motion.div initial={{y: 50, x: 200}} animate={{ y: '0', x: 0 }} transition={{duration: 1, type: 'tween'}} key={currentIndex} className="aimsg df">
                     <Avatar
                       alt="pp"
@@ -54,7 +54,7 @@ const Carousel = ({ slides }) => {
               <motion.div initial={{y: 50}} animate={{ y: '0'}} transition={{duration: 1, type: 'tween'}} key={currentIndex} className="circlefloat">
                 <h5>Up to</h5>
                 <Circlebar perc={50} ratio={0.8} pcol='#0000ff' tcol='#d3d3d3'/>
-              </motion.div>
+              </motion.div> */}
             </div>
         </div>
               {currentIndex === 0 ? 
@@ -68,7 +68,7 @@ const Carousel = ({ slides }) => {
                     ❰
                 </div>
               }
-              {currentIndex === 4 ? 
+              {currentIndex === slides.length - 1 ? 
                 <div className='blank right'>
                     ❱
                 </div>

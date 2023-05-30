@@ -1,65 +1,72 @@
-.container{
+.container {
   text-align: center;
-
-
   .bloc-tabs {
     display: flex;
-    background-color: #E0E0E0 ;
+    background-color: #E0E0E0;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    width: max-content;
+    width: fit-content;
     margin: auto;
-    padding: 0% 50px;
+    // padding: 12px;
   }
+
   .tabs {
     color: #333333;
     background-color: transparent;
-    padding: 13% 26%;
+    padding: 10px 20px;
+    padding-bottom: 0px;
     text-align: center;
     cursor: pointer;
     outline: none;
     font-size: 15px;
+    width: fit-content;
+    margin: 0px;
   }
-  .tabs:hover{
+
+  .tabs:hover {
     background-color: rgba(0, 0, 255, 0.342);
     border-radius: 50px;
   }
-  
-  .active-tabs  {
+
+  .active-tabs {
     background: blue;
     border-radius: 50px;
     color: white;
   }
-  .active-tabs:hover{
+
+  .active-tabs:hover {
     background: royalblue;
   }
-.paydiv{
-  margin: auto;
-  width: -webkit-fill-available;
-}
-  
-//   .active-tabs::before {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     top: -5px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     width: calc(100% + 2px);
-//     height: 5px;
-//     background: rgb(88, 147, 241);
-//   }
-  
-  
-  
+
+  .paydiv {
+    margin: auto;
+    width: -webkit-fill-available;
+  }
+
+  //   .active-tabs::before {
+  //     content: "";
+  //     display: block;
+  //     position: absolute;
+  //     top: -5px;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     width: calc(100% + 2px);
+  //     height: 5px;
+  //     background: rgb(88, 147, 241);
+  //   }
+
+
+
   button {
     border: none;
     width: 100%;
   }
+
   .content-tabs {
-    flex-grow : 1;
+    flex-grow: 1;
   }
+
   .content {
     background: transparent;
     padding-top: 2%;
@@ -67,12 +74,12 @@
     height: 100%;
     display: none;
 
-    .locations{
-        display: flex;
-        justify-content: space-between;
+    .locations {
+      display: flex;
+      justify-content: space-between;
     }
   }
-  
+
   .active-content {
     display: block;
   }
