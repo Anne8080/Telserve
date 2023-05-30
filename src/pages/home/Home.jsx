@@ -15,6 +15,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap'
 import Line from "../../components/Line.jsx"
 import Happy from './HappyConnection.jsx'
 import data from "../places/data.json"
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
     const slides = [
@@ -28,6 +29,9 @@ const Home = () => {
         <div style={{ backgroundColor: '#EBEBEB', overflow: 'hidden' }} id='head'>
             <Nav />
             <Carousel slides={slides} />
+            <Helmet>
+                <title>Telseve Networks</title>
+            </Helmet>
             {/* <Company /> */}
             <section className="subtab">
                 <h1 className="choose">Choose Your Package</h1>

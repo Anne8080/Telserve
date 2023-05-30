@@ -13,7 +13,7 @@ function CGMR() {
                 </h2>
                 <Row className='pb-5 pt-4' data-aos='fade-right' data-aos-duration='900'>
                     <Col md={9} className='cgmr left mt-5 position-relative'>
-                        <div className="">
+                        <div className="content-left">
                             <h2 className="fw-bold">
                                 Corporate Governance
                                 <Line width={180} className='mx-auto' />

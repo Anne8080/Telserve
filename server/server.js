@@ -23,6 +23,10 @@ app.get("*",(req, res, next) => {
     // next()
 })
 
+app.post("/question", async (req,res)=>{
+    const {prompt} = req.body;
+})
+
 
 app.listen(PORT, () => {
     console.log("App Launched on ", PORT)

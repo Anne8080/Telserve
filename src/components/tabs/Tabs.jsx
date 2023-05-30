@@ -27,7 +27,7 @@ const Tabs = ({ data }) => {
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          <p>Enterprise / Dedicated</p>
+          <p>Enterprise</p>
         </div>
       </div><br />
 

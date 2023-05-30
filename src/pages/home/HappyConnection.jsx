@@ -26,7 +26,7 @@ function MainFeatures() {
             <div className="banner text-white my-5" id='rest'>
                 <Container>
                     <h1 className='fw-bold'>Be In Control <em>Always</em></h1>
-                    With Telseve, feel assured and in control of your internet experience. We provide reliable connectivity, ensuring uninterrupted service. Our high-speed performance empowers you to confidently engage in online activities, from streaming to gaming. Trust Telseve to keep you connected and in charge.
+                    With Telseve, you can feel rest assured and in control of your internet experience. We provide reliable connectivity, ensuring uninterrupted service. Our high-speed performance empowers you to confidently engage in online activities, from streaming to gaming. Trust Telseve to keep you connected and in charge.
                 </Container>
             </div>
         </div>

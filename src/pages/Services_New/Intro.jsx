@@ -14,7 +14,7 @@ function Intro() {
                                 Our Services
                             </h1>
                             <div className="text">
-                                Superior quality services tailored to your needs. Exceeding expectations with precision, professionalism, and exceptional results. Trust us to deliver excellence every step of the way.
+                                Our Superior quality services tailored to your needs. Exceeding expectations with precision, professionalism, and exceptional results. Trust us to deliver excellence every step of the way.
                             </div>
                             <a href="#list">
                                 <button className="btn-light btn-border-dark btn mt-2"><MdArrowDownward /> Get Started</button>

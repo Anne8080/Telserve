@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet'
 import CGMR from './CGMR'
 import Team from './Team'
 import cover from "../../assets/corporate.webp"
+import Footer from '../../components/footer/Footer'
 
 function About() {
   return (
@@ -33,6 +34,7 @@ function About() {
       <HSEPolicy />
       <CGMR />
       <Team />
+      <Footer />
     </div>
   )
 }

@@ -1,11 +1,46 @@
 {
     "abuja": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        {
+            "id": "14",
+            "name": "City Lite",
+            "price": 19699,
+            "speed": 10,
+            "setup": 50000,
+            "features": [
+                "Unlimited Browsing",
+                "High Speed Internet",
+                "Streaming"
+            ]
+        },
+        {
+            "id": "15",
+            "name": "City Smart",
+            "price": 24699,
+            "speed": 20,
+            "setup": 50000,
+            "features": [
+                "Unlimited Browsing",
+                "High Speed Internet",
+                "Streaming",
+                "Lag-Free Videocalling"
+            ]
+        },
+        {
+            "id": "16",
+            "name": "City Premium",
+            "price": 39699,
+            "speed": 40,
+            "setup": 50000,
+            "features": [
+                "Unlimited Browsing",
+                "High Speed Internet",
+                "Streaming",
+                "Lag-Free Videocalling",
+                "Virtual Meetings",
+                "Near Zero Ping Gaming",
+                "Game Streaming"
+            ]
+        }
     ],
     "lagos": [
         {
@@ -17,7 +52,7 @@
             "features": [
                 "Unlimited Browsing",
                 "High Speed Internet",
-                "Straming"
+                "Streaming"
             ]
         },
         {
@@ -29,7 +64,7 @@
             "features": [
                 "Unlimited Browsing",
                 "High Speed Internet",
-                "Straming",
+                "Streaming",
                 "Lag-Free Videocalling",
                 "Virtual Meetings"
             ]
@@ -43,32 +78,38 @@
             "features": [
                 "Unlimited Browsing",
                 "High Speed Internet",
-                "Straming",
+                "Streaming",
                 "Lag-Free Videocalling",
                 "Virtual Meetings",
                 "Near Zero Ping Gaming",
-                "Game Straming"
+                "Game Streaming"
             ]
         }
     ],
-    "lagosEnt":[
+    "lagosEnt": [
         {
-            "id":"11",
-            "name":"Gold (Dedicated)",
-            "price":32000,
-            "speed":45
+            "id": "11",
+            "name": "Gold",
+            "price": 32000,
+            "speed": 45,
+            "setup": 45000,
+            "enterprise": true
         },
         {
-            "id":"12",
-            "name":"Silver (Dedicated)",
-            "price":42000,
-            "speed":75
+            "id": "12",
+            "name": "Silver",
+            "price": 42000,
+            "speed": 75,
+            "setup": 45000,
+            "enterprise": true
         },
         {
-            "id":"13",
-            "name":"Platninuim (Dedicated)",
-            "price":150000,
-            "speed":100
+            "id": "13",
+            "name": "Platninuim",
+            "price": 150000,
+            "speed": 100,
+            "setup": 45000,
+            "enterprise": true
         }
     ]
 }

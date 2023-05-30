@@ -28,12 +28,12 @@
         &{
             background-color: rgb(51, 33, 33);
             color: white;
-            padding: 40px;
+            padding: 10px;
         }
         img{
-            max-width: 50%;
+            max-width: 40%;
             position: absolute;
-            border-radius: 20px;
+            border-radius: 10px;
             @media (max-width:900px) {
                 display: none;
             }
@@ -58,6 +58,11 @@
                 @media (max-width:900px) {
                     padding-left: 0px;
                 }
+            }
+            &-left{
+                width: 100%;
+                padding-right: 20%;
+                text-align: left;
             }
         }
        

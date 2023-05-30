@@ -6,18 +6,24 @@ import { Col, Container, Row } from 'react-bootstrap'
 import plans from "./data.json"
 import PlanCard from '../../components/PlanCard'
 import Footer from '../../components/footer/Footer'
+import { Helmet } from 'react-helmet'
 function Lagos() {
     return (
         <div className='places'>
+             <Helmet>
+                <title>
+                    Telserve Lagos Plans
+                </title>
+            </Helmet>
             <Nav />
-            <div className='banner' style={{ backgroundImage: `url(${require("../../assets/watching_tv.jpg")})` }}>
+            <div className='banner' style={{ backgroundImage: `url(${require("../../assets/watching_tv.jpg")})` }} id='head'>
                 <h1 className='fw-bold display-5'>
                     Lagos Plans
                     <Line width={100} className='mx-auto' />
                 </h1>
             </div>
             <Container className='py-5'>
-                <div className="text-center mb-2">Shared/Home Plans</div>
+                <div className="text-center mb-2">Home Plans</div>
                 <Row className='gy-3 justify-content-center'>
                     {plans.lagos.map(p => <Col md={4} lg={3} key={p.id}>
                         <div className="shadow h-100">
@@ -26,7 +32,7 @@ function Lagos() {
                     </Col>)}
                 </Row>
 
-                <div className="text-center mb-2 mt-5 pt-5 ">Dedicated/Enterprise Plans</div>
+                <div className="text-center mb-2 mt-5 pt-5 ">Enterprise Plans</div>
                 <Row className='gy-3 justify-content-center'>
                     {plans.lagosEnt.map(p => <Col md={4} lg={3} key={p.id}>
                         <div className="shadow">

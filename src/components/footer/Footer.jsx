@@ -53,7 +53,7 @@ const Footer = () => {
                         <h3>Talk to Us</h3>
                         <ul>
                             <li>info@telservenet.com</li>
-                            <li>+234 01 295 3548</li>
+                            <li>+234 01 295 3548, 08094188531</li>
                         </ul>
                     </div>
                 </div>

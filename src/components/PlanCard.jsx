@@ -7,7 +7,7 @@ const format = (n) => "₦" + new Intl.NumberFormat("en-US").format(n)
 function PlanCard({ speed, name, price, setUp, features = [], important, highlight = false,id }) {
     return (
         <div className={`p-3 p-md-4 ${important ? "bg-primary shadow" : "bg-light2 nplan"} position-relative plan rounded-3 h-100`}
-            style={important && { transform: "scale(1.1)", zIndex: 33, borderTopLeftRadius: "22px !important" }}
+            style={important && { transform: "scale(1.1)", zIndex: 33, borderTopLeftRadius: "22px !important" }} 
         >
             <h3 className={` ${important ? "text-light" : "text-dark"} text-center fw-bold`}>{name}</h3>
             <div className='progress-container mx-4'>

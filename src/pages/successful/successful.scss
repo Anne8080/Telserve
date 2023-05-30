@@ -1,8 +1,12 @@
 .successful{
-    background-color: var(--bs-primary);
+    background-image: url(../../assets/confetti.webp);
     padding: 15%;
     height: 100vh;
     vertical-align: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.53);
+    background-blend-mode: multiply;
 
     .success{
         background-color: white;

@@ -7,7 +7,7 @@ import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlin
 const data = [
   {
     question: 'How to register on Telserve?',
-    answer: 'Easy By Contaction us by mail on info@telservnet.com or calling +23409161689303, or you can access various plans and click on "subscibe" to get started'
+    answer: 'Easy By Contacting us via mail on info@telservnet.com or calling any of our phone numbers, or you can access various plans by clicking on service plans to the Navigation bar and choose either Lagos or Abuja Plans to get started'
   },
   {
     question: 'Whats the difference between dedicated and shared internet?',
