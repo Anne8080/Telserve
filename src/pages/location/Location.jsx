@@ -43,7 +43,7 @@ const Location = () => {
                         <p className='p'>Have a littile something, something you want to talk to us about? Well give us a ring, send us an email, or visit us with the details below.</p>
                         <Link to='/subscribe' className="btn btn-primary">Or Subscribe</Link>
                         <div className="df dfget my-2">
-                            <Credentials icon=<CallOutlinedIcon style={{ fontSize: '3rem' }} /> title='Phone' det='+234 01 295 3548, 08094188531, 08100694372' hr='tel:+234012953548' link='Call' />
+                            <Credentials icon=<CallOutlinedIcon style={{ fontSize: '3rem' }} /> title='Phone' det='+234 01 295 3548, 08105162231, 08100694372' hr='tel:+234012953548' link='Call' />
                             <Credentials icon=<AlternateEmailOutlinedIcon style={{ fontSize: '3rem' }} /> title='Email' det='info@telservenet.com' hr='mailto:info@telservenet.com' link='Email' />
                             <Credentials icon={<LocationOnOutlinedIcon style={{ fontSize: '3rem' }} />} title='Address' det='Lagos: 19, Ajao Road, Ikeja Lagos State,&nbsp;&nbsp;Abuja: Suite 201, Kings Plaza Ahmadu Bello way, Kado, Abuja.' link='Visit' />
                         </div>

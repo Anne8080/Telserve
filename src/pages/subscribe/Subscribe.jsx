@@ -31,14 +31,14 @@ const Subscribe = () => {
                 <div className="text-sm text-muted pb-3">Monthly Cost </div>
                 <Stack direction='horizontal' className='justify-content-start'>
                   {(plan.enterprise && form.type === "shared") && <div className="text-sm text-muted pe-2">*Starts At </div>}
-                  <h3>{form.type === 'shared' ? format(plan.setup) : <a href='tel:08094188531'>Contact Sales</a>}</h3>
+                  <h3>{form.type === 'shared' ? format(plan.setup) : <a href='tel:08105162231'>Contact Sales</a>}</h3>
                 </Stack>
                 <div className="text-sm text-muted pb-3">Setup Costs</div>
               </Card.Body>
             </Card>
             <Card className='text-start shadow border-0 mt-4'>
               <Card.Body>
-                <h3>{form.type==="shared" ? format(plan.price + (plan.setup || 0) + (0.075 * (plan.price + (plan.setup || 0)))) : <a href='tel:08094188531'>Contact Sales</a>}</h3>
+                <h3>{form.type==="shared" ? format(plan.price + (plan.setup || 0) + (0.075 * (plan.price + (plan.setup || 0)))) : <a href='tel:08105162231'>Contact Sales</a>}</h3>
                 <div className="text-sm text-muted pb-3">Total Payment for Installation (VAT Inclusive {!plan.setup && " and Setup Costs Excluded"})</div>
               </Card.Body>
             </Card>

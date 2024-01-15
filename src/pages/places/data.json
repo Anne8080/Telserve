@@ -1,115 +1,107 @@
 {
-    "abuja": [
-        {
-            "id": "14",
-            "name": "City Lite",
-            "price": 19699,
-            "speed": 10,
-            "setup": 50000,
-            "features": [
-                "Unlimited Browsing",
-                "High Speed Internet",
-                "Streaming"
-            ]
-        },
-        {
-            "id": "15",
-            "name": "City Smart",
-            "price": 24699,
-            "speed": 20,
-            "setup": 50000,
-            "features": [
-                "Unlimited Browsing",
-                "High Speed Internet",
-                "Streaming",
-                "Lag-Free Videocalling"
-            ]
-        },
-        {
-            "id": "16",
-            "name": "City Premium",
-            "price": 39699,
-            "speed": 40,
-            "setup": 50000,
-            "features": [
-                "Unlimited Browsing",
-                "High Speed Internet",
-                "Streaming",
-                "Lag-Free Videocalling",
-                "Virtual Meetings",
-                "Near Zero Ping Gaming",
-                "Game Streaming"
-            ]
-        }
-    ],
-    "lagos": [
-        {
-            "id": "1",
-            "name": "Paddy Bundle",
-            "price": 14420,
-            "setup": 35900,
-            "speed": 17,
-            "features": [
-                "Unlimited Browsing",
-                "High Speed Internet",
-                "Streaming"
-            ]
-        },
-        {
-            "id": "2",
-            "name": "Home Lite",
-            "price": 18999,
-            "setup": 45000,
-            "speed": 25,
-            "features": [
-                "Unlimited Browsing",
-                "High Speed Internet",
-                "Streaming",
-                "Lag-Free Videocalling",
-                "Virtual Meetings"
-            ]
-        },
-        {
-            "id": "3",
-            "name": "Home Smart",
-            "price": 25200,
-            "setup": 45000,
-            "speed": 30,
-            "features": [
-                "Unlimited Browsing",
-                "High Speed Internet",
-                "Streaming",
-                "Lag-Free Videocalling",
-                "Virtual Meetings",
-                "Near Zero Ping Gaming",
-                "Game Streaming"
-            ]
-        }
-    ],
-    "lagosEnt": [
-        {
-            "id": "11",
-            "name": "Gold",
-            "price": 32000,
-            "speed": 45,
-            "setup": 45000,
-            "enterprise": true
-        },
-        {
-            "id": "12",
-            "name": "Silver",
-            "price": 42000,
-            "speed": 75,
-            "setup": 45000,
-            "enterprise": true
-        },
-        {
-            "id": "13",
-            "name": "Platninuim",
-            "price": 150000,
-            "speed": 100,
-            "setup": 45000,
-            "enterprise": true
-        }
-    ]
+  "abuja": [
+    {
+      "id": "14",
+      "name": "City Lite",
+      "price": 19699,
+      "speed": 10,
+      "setup": 50000,
+      "features": ["Unlimited Browsing", "High Speed Internet", "Streaming"]
+    },
+    {
+      "id": "15",
+      "name": "City Smart",
+      "price": 24699,
+      "speed": 20,
+      "setup": 50000,
+      "features": [
+        "Unlimited Browsing",
+        "High Speed Internet",
+        "Streaming",
+        "Lag-Free Videocalling"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "City Premium",
+      "price": 39699,
+      "speed": 40,
+      "setup": 50000,
+      "features": [
+        "Unlimited Browsing",
+        "High Speed Internet",
+        "Streaming",
+        "Lag-Free Videocalling",
+        "Virtual Meetings",
+        "Near Zero Ping Gaming",
+        "Game Streaming"
+      ]
+    }
+  ],
+  "lagos": [
+    {
+      "id": "1",
+      "name": "Paddy Bundle",
+      "price": 14420,
+      "setup": 55999,
+      "speed": 17,
+      "features": ["Unlimited Browsing", "High Speed Internet", "Streaming"]
+    },
+    {
+      "id": "2",
+      "name": "Home Lite",
+      "price": 18999,
+      "setup": 55999,
+      "speed": 25,
+      "features": [
+        "Unlimited Browsing",
+        "High Speed Internet",
+        "Streaming",
+        "Lag-Free Videocalling",
+        "Virtual Meetings"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Home Smart",
+      "price": 25200,
+      "setup": 55999,
+      "speed": 30,
+      "features": [
+        "Unlimited Browsing",
+        "High Speed Internet",
+        "Streaming",
+        "Lag-Free Videocalling",
+        "Virtual Meetings",
+        "Near Zero Ping Gaming",
+        "Game Streaming"
+      ]
+    }
+  ],
+  "lagosEnt": [
+    {
+      "id": "11",
+      "name": "Gold",
+      "price": 32000,
+      "speed": 45,
+      "setup": 45000,
+      "enterprise": true
+    },
+    {
+      "id": "12",
+      "name": "Silver",
+      "price": 42000,
+      "speed": 75,
+      "setup": 45000,
+      "enterprise": true
+    },
+    {
+      "id": "13",
+      "name": "Platninuim",
+      "price": 150000,
+      "speed": 100,
+      "setup": 45000,
+      "enterprise": true
+    }
+  ]
 }
